@@ -4,9 +4,11 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "function": "node --watch ./js/funkcijos/function.js",
     "boolean": "node --watch ./js/duomenys/boolean.js",
     "string": "node --watch ./js/duomenys/string.js",
     "number": "node --watch ./js/duomenys/number.js",
+    "nd": "node --watch ./js/duomenys/nd.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
