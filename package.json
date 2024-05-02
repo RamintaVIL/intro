@@ -1,0 +1,16 @@
+
+{
+  "name": "intro",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "boolean": "node --watch ./js/duomenys/boolean.js",
+    "string": "node --watch ./js/duomenys/string.js",
+    "number": "node --watch ./js/duomenys/number.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
