@@ -11,7 +11,7 @@ NUMBERS
 
 Matematiniai operatoriai:
 - aritmetiniai: +, -, /, *, **, %
-- priskyrimo: += -=, /=, *=, =**, %=
+- priskyrimo: += -=, /=, *=, **=, %=
 
 */
 
