@@ -1,36 +1,173 @@
 console.log(true && true && true && true); 
-console.log(true && true && true && false); // true + false = false
-console.log(true && true && false && false); // true + false = false
-console.log(true && false && false && false); // false + false = false
+console.log(true && true && true && false); 
+console.log(true && true && false && true);
+console.log(true && false && true && true);
+console.log(true && true && false && false); 
+console.log(true && false && false && false);
+console.log(true && false && false && true);
+console.log(true && false && true && false);
+// jei su && yra bent vienas False, viskas gaunasi False;
 console.clear();
 console.log(false && false && false && false); 
-console.log(false && false && false && true);  // false + false = false
-console.log(false && false && true && false); // false + false = false
-console.log(false && true && false && false); // false + false = false
-console.log(true && false && false && false); // false + false = false
+console.log(false && false && false && true);  
+console.log(false && false && true && false); 
+console.log(false && true && false && false); 
+console.log(false && false && true && true); 
+console.log(false && true && true && true); 
+console.log(false && true && true && false); 
+console.log(false && true && false && true);
+// jei su && yra bent vienas False, viskas gaunasi False;
 console.clear();
 console.log(true || true || true || true);
-console.log(false || false || false || false); 
-console.log(true || true || true || false); // true or false = true
-console.log(true || true || false || false); // true or false = true
-console.log(true || false || false || false); // true or false = true
+console.log(true || true || true || false); 
+console.log(true || true || false || true); 
+console.log(true || false || true || true);
+console.log(true || true || false || false); 
+console.log(true || false || false || false); 
+console.log(true || false || false || true);
+console.log(true || false || true || false);
+// jei su || yra bent vienas true, viskas gaunasi true;
 console.clear();
 console.log(false || false || false || false); 
 console.log(false || false || false || true);  
-console.log(false || false || true || false); 
-console.log(false || true || false || false); 
-
+console.log(false || false || true || false);
+console.log(false || true || false || false);
+console.log(false || false || true || true); 
+console.log(false || true || true || true);
+console.log(false || true || true || false);
+console.log(false || true || false|| true);
+// jei su || yra bent vienas true, viskas gaunasi true;
+console.clear();
 console.log(true && true && true || true); 
 console.log(true && true && true || false); 
+console.log(true && true && false || true);
+console.log(true && false && true || true);
 console.log(true && true && false || false); 
 console.log(true && false && false || false); 
-
+console.log(true && false && false || true);
+console.log(true && false && tue || false);
+// Ziurint is desines i kaire gausnasi atsakymas
+console.clear();
+console.log(true && true || true && true); 
+console.log(true && true || true && false); 
+console.log(true && true || false && true);
+console.log(true && false || true && true);
+console.log(true && true || false && false); 
+console.log(true && false || false && false);
+console.log(true && false || false && true);
+console.log(true && false || true && false);
+// jis mato kaip matematini skaiciavima;
+// console.log((true && false) || (false && false));
+// console.log(false || false)
+console.clear();
 console.log(true || true && true && true); 
 console.log(true || true && true && false); 
+console.log(true || true && false && true);
+console.log(true || false && true && true);
 console.log(true || true && false && false); 
 console.log(true || false && false && false);
+console.log(true || false && false && true);
+console.log(true || false && true && false);
+// console.log(true || (true && false && false));
+// console.log(true || false);
+console.clear();
+console.log(true || true || true && true); 
+console.log(true || true || true && false); 
+console.log(true || true || false && true);
+console.log(true || false || true && true);
+console.log(true || true || false && false); 
+console.log(true || false || false && false);
+console.log(true || false || false && true);
+console.log(true || false || true && false);
+// console.log(true || false || (false && true));
+// console.log(true || false || false);
 console.clear();
 console.log(true && true || true || true); 
 console.log(true && true || true || false); 
+console.log(true && true || false || true);
+console.log(true && false || true || true);
 console.log(true && true || false || false); 
 console.log(true && false || false || false);
+console.log(true && false || false || true);
+console.log(true && false || true || false);
+// console.log((true && false) || false || false);
+// console.log(false || false || false);
+console.clear();
+console.log(true || true && true || true); 
+console.log(true || true && true || false); 
+console.log(true || true && false || true);
+console.log(true || false && true || true);
+console.log(true || true && false || false); 
+console.log(true || false && false || false);
+console.log(true || false && false || true);
+console.log(true || false && true || false);
+// console.log(true || (true && false) || false);
+// console.log(true || false || false);
+// cia kaip su klaustais kitu atveju nesigauna atsakymas
+console.clear();
+console.log(false || false || false && false); 
+console.log(false || false || false && true);  
+console.log(false || false || true && false);
+console.log(false || true || false && false);
+console.log(false || false || true && true); 
+console.log(false || true || true && true);
+console.log(false || true || true && false);
+console.log(false || true || false && true);
+// console.log(false || true || (false && true));
+// console.log(false || true || false);
+console.clear();
+console.log(false || false && false && false); 
+console.log(false || false && false && true);  
+console.log(false || false && true && false);
+console.log(false || true && false && false);
+console.log(false || false && true && true); 
+console.log(false || true && true && true);
+console.log(false || true && true && false);
+console.log(false || true && false && true);
+// o cia gali eiti ir eiles tvarka
+// console.log(false || true && true && false);
+// console.log(false || true) = true;
+// console.log(true && true && false) = false;
+// bet gali buti ir:
+// console.log(false || (true && true && false));
+// console.log(false || false);
+console.clear();
+console.log(false || false && false || false); 
+console.log(false || false && false || true);  
+console.log(false || false && true || false);
+console.log(false || true && false || false);
+console.log(false || false && true || true); 
+console.log(false || true && true || true);
+console.log(false || true && true || false);
+console.log(false || true && false || true);
+// man gaunasi, kad galiu ir iseiles eiti, bet jei ir naudoju sklaustus tas pats gaunasi
+console.clear();
+console.log(false && false && false || false); 
+console.log(false && false && false || true);  
+console.log(false && false && true || false);
+console.log(false && true && false || false);
+console.log(false && false && true || true); 
+console.log(false && true && true || true);
+console.log(false && true && true || false);
+console.log(false && true && false || true);
+// is kaires i desine
+console.clear();
+console.log(false && false || false || false); 
+console.log(false && false || false || true);  
+console.log(false && false || true || false);
+console.log(false && true || false || false);
+console.log(false && false || true || true); 
+console.log(false && true || true || true);
+console.log(false && true || true || false);
+console.log(false && true || false || true);
+// is kaires i desine
+console.clear();
+console.log(false && false || false && false); 
+console.log(false && false || false && true);  
+console.log(false && false || true && false);
+console.log(false && true || false && false);
+console.log(false && false || true && true); 
+console.log(false && true || true && true);
+console.log(false && true || true && false);
+console.log(false && true || false && true);
+// is kaires i desine ir viska darant is eiles gaunasi atsakymas
