@@ -210,14 +210,29 @@ let name2BMI = svoris2 / ugis2 ** 2;
 console.log(nameBMI);
 console.log(name2BMI);
 
-const isNameBMIBiger;
-const isName2BMIBiger;
-const whichIsBigger = isNameBMIBiger > isName2BMIBiger;
+let MarksWeights = 95 // kg;
+let MarksTall = 1.88 // m;
 
-console.log(whichIsBigger);
+let MarksBMI =  MarksWeights / MarksTall ** 2;
+console.log(MarksBMI);
 
-let markMass = 78 // kg; 
-console.log(markMass);
+let JohnWeights = 85 // kg;
+let JohnTall = 1.76 // m;
+
+let JohnBMI =  JohnWeights / JohnTall ** 2;
+console.log(JohnBMI);
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
