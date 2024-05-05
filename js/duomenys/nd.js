@@ -174,7 +174,6 @@ console.log(false && true || false && true);
 
 console.clear();
 
-
 // Mark and John are trying to compare their BMI (Body Mass Index), which is calculated using the formula:
 // BMI = mass / height ** 2 = mass / (height * height) (mass in kg and height in meter).
 // 1. Store Mark's and John's mass and height in variables
@@ -210,17 +209,33 @@ let name2BMI = svoris2 / ugis2 ** 2;
 console.log(nameBMI);
 console.log(name2BMI);
 
-let MarksWeights = 95 // kg;
-let MarksTall = 1.88 // m;
+console.clear();
 
-let MarksBMI =  MarksWeights / MarksTall ** 2;
+const MarksWeights = 95 // kg;
+const MarksTall = 1.88 // m;
+
+const MarksBMI =  MarksWeights / MarksTall ** 2;
 console.log(MarksBMI);
 
-let JohnWeights = 85 // kg;
-let JohnTall = 1.76 // m;
+const JohnWeights = 85 // kg;
+const JohnTall = 1.76 // m;
 
-let JohnBMI =  JohnWeights / JohnTall ** 2;
+const JohnBMI =  JohnWeights / JohnTall ** 2;
 console.log(JohnBMI);
+
+const compare = MarksTall || JohnTall;
+console.log(compare);
+
+const taiKurisDidesnis = "John" + " " + JohnBMI || 'Mark' + ' ' + MarksBMI;
+console.log(taiKurisDidesnis);
+
+const taiKurisDidesnis1 = MarksBMI || JohnBMI;
+console.log(taiKurisDidesnis1);
+
+
+
+
+
 
 
 
