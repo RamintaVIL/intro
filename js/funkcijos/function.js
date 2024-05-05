@@ -12,7 +12,7 @@ function funkcijosPavadinimas() {
 const a = funkcijosPavadinimas();
 console.log(a);
 
-function empty(){
+function empty() {
     return undefined; 
 }
 
@@ -37,18 +37,17 @@ surname: Jonaitis
 
 Output:
 Laba diena, as esu Jonas Jonaitis!
-Laba diena, as esu Petras Petraitis
+Laba diena, as esu Petras Petraitis!
 Laba diena, as esu Ona Onaityte!
-
 */
 
 function intro(name, surname) {
     return 'Laba diena, as esu ' + name + ' ' + surname + '!';
 }
 
-console.log(intro('Jonas', 'Jonaitis', ));
-console.log(intro('Petras', 'Petraitis', ));
-console.log(intro('Ona', 'Onaityte', ));
+console.log(intro('Jonas', 'Jonaitis'));
+console.log(intro('Petras', 'Petraitis'));
+console.log(intro('Ona', 'Onaityte'));
 
 /*
 Input:
@@ -64,6 +63,8 @@ function multiply(firstNumber, secondNumber) {
 }
 
 console.log(multiply(5, 7));
+console.log(multiply(-2, 8));
+console.log(multiply(3.14, 2));
 
 function daugyba(pirmasSkaicius, antrasSkaicius) {
     return pirmasSkaicius * antrasSkaicius; 
@@ -73,6 +74,7 @@ console.log(daugyba(5, 7));
 
 // Mano vardas yra Jonas, man 99 metai ir as megstu cepelinus.
 // Mano vardas yra Maryte, man 88 metai ir as megstu balionus.
+
 function iLike(name, age, item) {
  return 'Mano vardas yra ' + name + ' , man ' + age + ' metai ir as megstu' + item + '.';
  // return 'Mano vardas yra VARDAS, man XX metai ir as megstu DALYKAS.'
@@ -86,15 +88,15 @@ console.log(iLike('Petras', 77, 'cepelinus'));
 console.clear();
 
 function price(value) {
-    const PVM =21;
+    const PVM = 21;
     const priceIncrease = 1 + PVM / 100;
     const priceForSale = value * priceIncrease; 
 
     return priceForSale;
 }
 
-console.log(price(100)); // 121
-console.log(price(150)); // 121
+console.log(price(100)); 
+console.log(price(150)); 
 
 // Dictionary: ZODIS, ZODIS, ZODIS.
 function words(w1, w2, w3) {
@@ -104,8 +106,24 @@ function words(w1, w2, w3) {
   sentence += w2;
   sentence += ' , ';
   sentence += w3;
-  sentence += ' , '; 
+  sentence += ' , ';
+  
   return sentence;
+
 }
 
 console.log(words('labas' , 'rytas' , 'Lietuva'));
+ 
+// += prie save paties, pridedu kazka kita
+
+// Lietuvos respublikos prezidento rinkimai vyksta dvylikta, nes ona yra nebpriklausoma.
+
+function information(word1, word2) {
+    return 'My country is independent ' + word1 + ' and I will go to vote at ' + word2 + '.';  
+
+}
+ 
+console.log(information('Lietuva', 'may'));
+console.log(information('birzelio 1', 'Anglija'));
+
+
