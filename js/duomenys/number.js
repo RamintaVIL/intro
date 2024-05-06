@@ -10,8 +10,9 @@ NUMBERS
 - NaN (not a number)
 
 Matematiniai operatoriai:
-- aritmetiniai: +, -, /, *, **, %
+- aritmetiniai: +, -, /, *, **, %, ++, --
 - priskyrimo: += -=, /=, *=, **=, %=
+
 
 */
 
@@ -214,5 +215,26 @@ console.log(pinigines_turinys);
 
 console.clear(); 
 
+let makaronai = 2;
+console.log(makaronai);
 
+makaronai += 2;
+console.log(makaronai);
 
+makaronai += 2;
+console.log(makaronai);
+
+makaronai += -1;
+console.log(makaronai);
+
+makaronai++;
+console.log(makaronai);
+
+++makaronai;
+console.log(makaronai);
+
+let m = 6;
+console.log(m)
+console.log(++m);
+console.log(m++);
+// uz kintamojo, tai padidejimas ivyksta po 
