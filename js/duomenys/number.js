@@ -218,7 +218,7 @@ console.clear();
 let makaronai = 2;
 console.log(makaronai);
 
-makaronai += 2;
+makaronai = makaronai + 2;
 console.log(makaronai);
 
 makaronai += 2;
@@ -227,6 +227,7 @@ console.log(makaronai);
 makaronai += -1;
 console.log(makaronai);
 
+// cia jei naudotume ta pacia reiksme, pvz. -1
 makaronai++;
 console.log(makaronai);
 
@@ -234,7 +235,12 @@ console.log(makaronai);
 console.log(makaronai);
 
 let m = 6;
-console.log(m)
+console.log(m);
+
+// pirmiau padidina, o po to spausdina
 console.log(++m);
+// pirmiau spausdina, po to padidina
 console.log(m++);
-// uz kintamojo, tai padidejimas ivyksta po 
+
+
+
