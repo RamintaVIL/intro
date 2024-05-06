@@ -276,22 +276,54 @@ if (8 >= 10) {
 }
 
 // 2.	Išvesti teksto tipo kintamųjų ilgius
-const marks = ['Nežinau, kokios spalvos batelius turiu namuose'];
-const marks6 = ['Manau pirksiu geltonos'];
+const sentence = ['Nežinau', 'kokios', 'spalvos', 'batelius', 'turiu', 'namuose'];
+const ilgis1 = sentence.length ;
+console.log(ilgis1);
 
-const suma = marks[0] + marks[1] + marks[2] + marks[3] + marks[4] + marks[5];
-let length = marks.length ;
-const ilgis2 = marks6.length ;
-console.log(length);
+const sentence1 = ['Manau', 'pirksiu', 'geltonos'];
+const ilgis2 = sentence1.length ;
 console.log(ilgis2);
 
 // 3.	Tarpusavyje palyginti teksto tipo kintamųjų ilgius:
 // a.	kuris didesnis
+if (ilgis1 > ilgis2) {
+    console.log('TAIP');
+} else {
+    Cconsole.log('NE');
+}
 // b.	kuris mažesnis
+if (ilgis1 < ilgis2) {
+    console.log('TAIP');
+} else {
+    console.log('NE');
+}
 // c.	ar jie lygūs
+if (ilgis1 === ilgis2) {
+    console.log('TAIP');
+} else {
+    console.log('NE');
+
+}
 // d.	ar jie nelygūs
+if (ilgis1 !== ilgis2) {
+    console.log('Pomidoras');
+} else {
+    console.log('Bandykite kita karta');
+
+}
 // e.	kuris didesnis arba lygus
+if (ilgis2 >= ilgis2) {
+    console.log('TAIP');
+} else {
+    console.log('NE');
+}
+
 // f.	kuris mažesnis arba lygus
+if (ilgis1 <= ilgis2){
+    console.log('Pomidoras');
+} else {
+    console.log('bandykite kita karta');
+}
 
 // 4.	Išvesti sąrašo tipo kintamųjų ilgius
 
