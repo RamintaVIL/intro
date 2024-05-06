@@ -18,7 +18,7 @@ const hasFuel = false;
 console.log(isSunShining);
 console.log(hasFuel);
 
-console.log('KAIP NENAUDOTI:', (true + true) * (true + true));
+console.log('KAIP NENAUDOTI:', (true + true) * (true + true)); // jis galvoja, kad pirmuose skliaustuose yra 1+1;
 console.log('KAIP NENAUDOTI:', true * false); // jis atpazista kaip matematini veiksma, siuo atveju false atitinka 0
 
 console.log('-------------');

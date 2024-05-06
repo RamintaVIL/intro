@@ -39,6 +39,8 @@ Output:
 Laba diena, as esu Jonas Jonaitis!
 Laba diena, as esu Petras Petraitis!
 Laba diena, as esu Ona Onaityte!
+
+As duodu varda pavarde, o jis man grazina normalu sakini
 */
 
 function intro(name, surname) {
@@ -120,10 +122,34 @@ console.log(words('labas' , 'rytas' , 'Lietuva'));
 
 function information(word1, word2) {
     return 'My country is independent ' + word1 + ' and I will go to vote at ' + word2 + '.';  
-
 }
- 
+
 console.log(information('Lietuva', 'may'));
 console.log(information('birzelio 1', 'Anglija'));
 
+const Mantai = "Mantas";
 
+function vardas(name) {
+return console.log('Labas ${name}')
+}
+vardas("Mantai");
+
+function howMany(text) {
+    return console.log(text.lenght)
+}
+
+howMany("Labas");
+
+console.clear();
+
+// Mano vardas yra Ona-Marija, man 35 metai, ir mano hobis yra lipdymas is molio.
+function introduction(name, age, hobby ) {
+    return 'Mano vardas yra ' + name + ' , man ' + age + ' metai,' + ' ir mano hobis yra ' + hobby + '.';
+}
+console.log(introduction('Ona-Marija', 35, 'lipdymas is molio'));
+
+// 'As gyvenu 'Lietuvoje', jau '40' metu'.
+function place(Country, number) {
+    return 'As gyvenu ' + Country + ', jau ' + number + ' metu ' + ".";
+ }
+console.log(place('Lietuvoje', 40));

@@ -1,7 +1,7 @@
 /* 
 STRING - tekstas, tekstiniu simboliu grandinele
 
-iniciavimas: ' (vienguba), "( dviguba)
+iniciavimas: ' (vienguba), " ( dviguba)
 
 */
 

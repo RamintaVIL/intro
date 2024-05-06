@@ -170,7 +170,7 @@ console.log(false && false || true && true);
 console.log(false && true || true && true);
 console.log(false && true || true && false);
 console.log(false && true || false && true);
-// is kaires i desine ir viska darant is eiles gaunasi atsakymas
+// is kaires i desine ir viska darant is eiles gaunasi atsakymas arba pirma skaiciuoja &&, o po to ||
 
 console.clear();
 
@@ -211,10 +211,13 @@ console.log(name2BMI);
 
 console.clear();
 
-const MarksWeights = 95 // kg;
+
+
+
+const MarksMass = 95 // kg;
 const MarksTall = 1.88 // m;
 
-const MarksBMI =  MarksWeights / MarksTall ** 2;
+const MarksBMI =  MarksMass / MarksTall ** 2;
 console.log(MarksBMI);
 
 const JohnWeights = 85 // kg;
@@ -226,11 +229,28 @@ console.log(JohnBMI);
 const compare = MarksTall || JohnTall;
 console.log(compare);
 
-const taiKurisDidesnis = "John" + " " + JohnBMI || 'Mark' + ' ' + MarksBMI;
-console.log(taiKurisDidesnis);
+const isMarkBMIBigger = "John" + " " + JohnBMI || 'Mark' + ' ' + MarksBMI;
+console.log(isMarkBMIBigger);
 
-const taiKurisDidesnis1 = MarksBMI || JohnBMI;
-console.log(taiKurisDidesnis1);
+const isJohnBMIBigger = MarksBMI || JohnBMI;
+console.log(isJohnBMIBigger);
+
+const Mantai = "Mantas";
+
+function vardas(name) {
+    return console.log('Labas ${name}')
+}
+vardas("Mantai");
+
+// Sukurkitr funkciją, kuri priimtu viena parametra (teksta)
+
+function howMany(text) {
+    return console.log(text.lenght)
+}
+
+howMany("Labas")
+
+
 
 
 
