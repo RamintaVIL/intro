@@ -13,7 +13,6 @@ Matematiniai operatoriai:
 - aritmetiniai: +, -, /, *, **, %, ++, --
 - priskyrimo: += -=, /=, *=, **=, %=
 
-
 */
 
 const pirmas = 5; 
@@ -234,6 +233,8 @@ console.log(makaronai);
 ++makaronai;
 console.log(makaronai);
 
+console.clear();
+
 let m = 6;
 console.log(m);
 
@@ -242,5 +243,20 @@ console.log(++m);
 // pirmiau spausdina, po to padidina
 console.log(m++);
 
+console.log ('--------');
+
+let kava = 9;
+console.log(kava);
+console.log(--kava);
+console.log(kava--);
+console.log(kava);
+
+console.log ('--------');
+
+let arbata = 10;
+console.log(arbata);
+console.log(arbata--);
+console.log(--arbata);
+console.log(arbata);
 
 

@@ -40,7 +40,7 @@ console.log('Vidurkis', average2);
 // is eiles, t.y. is kaires i desine arba is virsaus i apacia.
 
 console.clear();
-
+// 10, 2, 8, 4, 6
 let sum3 = 0;
 sum3 = sum3 + marks[0];
 sum3 = sum3 + marks[1];
@@ -50,7 +50,8 @@ sum3 = sum3 + marks[4];
 
 console.log(sum3);
 
-// ? = 30 + undefined, nes atminties lasteleje yra tik iki 4. Papraseme nelogisko dalyko
+// ? = 30 + undefined, gausime NaN, nes prie normalios reiksmes + nenormalia, yra nelogiska reiksme.
+// pridejus + marks[5] gausime undefined, nes reiksmes su numeriu 5 mes net nepateike esame.
 sum3 = sum3 + marks[5];
 
 let sum33 = 0;
@@ -61,7 +62,9 @@ sum33 += marks[3];
 sum33 += marks[4];
 
 console.log(sum33);
+// cia svarbu pastebeti, kad galima savotiskai automatizuoti. Automatizavimas prasieda kai pastebi, kad kazkas yra imanoma priversti kartotis vienodai.
 
+// 10, 2, 8, 4, 6
 let suma3 = 0;
 let index = 0;
 // index - pozicijos numeris

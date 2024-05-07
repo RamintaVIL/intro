@@ -59,21 +59,15 @@ if (4 != 7 ) {
 
 console.clear();
 
-// 3 variantas
-// red -> raudona
-// blue -> melyna
-// green -> zalia
-// other -> nezinau tokios spalvos
-
 // console matome Raudona, nes tenkina salyga
 const colour = 'red';
 
 if (colour === 'red') {
-    console.log('Raudona')
+    console.log('Raudona');
 }
 
 if (colour === 'blue') {
-    console.log('Melyna')
+    console.log('Melyna');
 }
 
 if (colour === 'green') {
@@ -98,7 +92,15 @@ if (coloor === 'green') {
 
 console.clear();
 
-const coolor = 'green'
+// 3 variantas
+// red -> raudona
+// blue -> melyna
+// green -> zalia
+// other -> nezinau tokios spalvos
+
+const coolor = 'green';
+
+// vienas didelis kirminas is 3 daliu.
 if (coolor === 'red') {
     console.log('Raudona');
 } else if (coolor === 'blue') {
@@ -110,7 +112,7 @@ if (coolor === 'red') {
 }
 
 const colooor = 'green';
-let translation = '';
+let translation = ''; // empty string
 
 if (colooor === 'red') {
     translation = 'Raudona';
@@ -122,8 +124,9 @@ if (colooor === 'red') {
     console.log('Nezinau tokios spalvos');
 }
 
-let colors = 'blue';
+console.log('>>>', translation);
 
+let colors = 'blue';
 let translations = '';
 
 if (colors === 'red') {
@@ -138,15 +141,38 @@ if (colors === 'red') {
 
 console.log('>>>', translations);
 
-const colorss = 'white';
-const colorss1 = 'black';
-const colorss2 = 'red';
-const colorss3 = 'blue';
+console.clear();
 
-function colorssTranslations(color) {
-   return 'spalva'
+function colorssTranslatio(colors) {
+    return 'spalva...';
 }
-console.log(colorssTranslations(white));
+
+const colorss1 = 'white';
+const colorss2 = 'black';
+const colorss3 = 'red';
+const colorss4 = 'blue';
+
+function colorssTranslatio(colorss) {
+    let translatio = '';
+
+    if (colorss === 'red') {
+        translation = 'Raudona';
+    } else if (colorss === 'blue') {
+        translation = 'Melya';   
+    } else if (colorss === 'green') {
+        translation = 'Zalia';
+    } else if (colorss === 'black') {
+        translation = 'Juoda';
+    } else {
+        console.log('Nezinau tokios spalvos');
+    }
+    // COLORSS -> SPALVA;
+    return colorss + ' -> '+ translatio;
+}
+console.log(colorssTranslatio('white'));
+console.log(colorssTranslatio('black'));
+console.log(colorssTranslatio('red'));
+console.log(colorssTranslatio('blue'));
 
 
 

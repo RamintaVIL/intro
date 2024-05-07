@@ -197,15 +197,21 @@ console.log(city);
 // a.	Po kiekvieno jų inicijavimo, išvesti į console
 const number = [12, 8, 5];
 console.log(number);
-
+const number1 = [20, 18, 20, 18, 20, 18];
+console.log(number1);
+const number2= [2, 8, 7, 3, 6, 4, 5, 5];
+console.log(number2);
 
 // 4.	Sukurti 3 sąrašo tipo kintamuosius su penkiomis teksto tipo reikšmėmis
 // a.	Po kiekvieno jų inicijavimo, išvesti į console
-const words = ['labas', 'pasauli', 'platus'];
+const words = ['Labas', 'pasauli', 'platus'];
 console.log(words);
+const words1 = ['Vakar nusipirkau naują baltą suknelę'];
+console.log(words1)
+const words2 = ['Šiandien lauke vėjas, tad į lauką nesiu'];
+console.log(words2)
 
 // Veiksmai su kintamaisiais
-
 // 1.	Susumuoti visus skaičiaus tipo kintamuosius
 // a.	Rezultatą išvesti į console
 const sum = a + b + c;
@@ -215,22 +221,6 @@ console.log(sum);
 // a.	Rezultatą išvesti į console
 const text = name + ' ' + surname + ' ' + city + '.';
 console.log(text);
-
-// 3.	Apskaičiuoti vertę iš sąrašų kurių verčių tipas yra skaičiai, pagal pateiktą logiką
-// a.	1-2+3-4+5
-// b.	Rezultatą išvesti į console
-const marks0 = 12;
-const marks1 = 8;
-const marks2 = 5;
-const number1 = marks0 + marks1 + marks2;
-console.log(number1);
-
-// 4.	Sujungti sąrašų vertes, kurių tipas yra tekstai, nuo sąrašo galo iki pradžios taip, jog tarp jų būtų kablelis ir tarpas
-const w1 = 'platus';
-const w2 = 'pasauli';
-const w3 = 'labas';
-const sentense = [w1 + ' ' + w2 + ',' + w3];
-console.log(sentense);
 
 // Kintamųjų palyginimas
 // Priklausomai nuo sąlygos, susikurkite 2 skirtingų reikšmių nurodyto tipo kintamuosius.
@@ -326,20 +316,87 @@ if (ilgis1 <= ilgis2){
 }
 
 // 4.	Išvesti sąrašo tipo kintamųjų ilgius
+const sequence = [5, 8, 9, 10, 15, 30];
+const ilgiis = sequence.length;
+console.log(ilgiis);
+const sequence1 = [18, 2, 7, 3, 9, 100, 30, 80];
+const ilgiis1 = sequence1.length;
+console.log(ilgiis1);
 
 // 5.	Tarpusavyje palyginti sąrašo tipo kintamųjų ilgius:
 // a.	kuris didesnis
-// b.	kuris mažesnis
+// b.   kuris mazesnis
+if (ilgiis > ilgiis1) {
+    console.log('Pomidoras');
+} else {
+    console.log('Bandykite kitą kartą');
+}
+
+if (ilgiis < ilgiis1) {
+    console.log('Pomidoras');
+} else {
+    console.log('Bandykite kitą kartą');
+}
+
 // c.	ar jie lygūs
+if (ilgiis === ilgiis1) {
+    console.log('Pomidoras');
+} else {
+    console.log('Bandykite kitą kartą');
+}
+
 // d.	ar jie nelygūs
+if (ilgiis !== ilgiis1) {
+    console.log('Pomidoras');
+} else {
+    console.log('Bandykite kitą kartą');
+}
 // e.	kuris didesnis arba lygus
+if (ilgiis >= ilgiis1) {
+    console.log('Pomidoras');
+} else {
+    console.log('Bandykite kitą kartą');
+}
 // f.	kuris mažesnis arba lygus
+if (ilgiis <= ilgiis1) {
+    console.log('Pomidoras');
+} else {
+    console.log('Bandykite kitą kartą');
+}
+
+// 4.	Sujungti sąrašų vertes, kurių tipas yra tekstai, nuo sąrašo galo iki pradžios taip, jog tarp jų būtų kablelis ir tarpas
+const w1 = 'platus';
+const w2 = 'pasauli';
+const w3 = 'labas';
+const sentense = (w3 + ', ' + w2 + ' ' + w1);
+console.log(sentense);
+
+const w11 = ['platus', 'pasauli', 'labas'] ;
+const sentense1 = (w3 + ', ' + w2 + ' ' + w1);
+console.log(sentense1);
 
 
+// 3.	Apskaičiuoti vertę iš sąrašų kurių verčių tipas yra skaičiai, pagal pateiktą logiką
+// a.	1-2+3-4+5
+// b.	Rezultatą išvesti į console
 
+const cents = [12, 8, 5, 19, 20];
+const result = cents[0] - cents[1] + cents[2] - cents[3] + cents[4];
+console.log(result);
+console.log(cents[0]);
+console.log(cents[1]);
+console.log(cents[2]);
+console.log(cents[3]);
+console.log(cents[4]);
 
+// const cents0 = 12;
+// const cents1 = 8;
+// const cents2 = 5;
+// const cents3 = 19;
+// const cents4 = 20;
 
-
+// const numberr = cents0 - cents1 + cents2 - cents3 + cents4;
+// console.log(numberr);
 
 
 
