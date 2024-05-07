@@ -114,4 +114,100 @@ suma4 += marks[index];
 index1 ++;
 console.log(suma4);
 
+console.clear();
+// ji nuo zodzio funkcija iki } yra funkcijos riba. Nieko daugiau nematome, tarsi uzdara eko sistema. ji mato pazymius, bet nemato, ar tai Jono ar Marytes.
+// jei vaikas negavo dar ne vieno pazymio, tai mums function neturi ko grazinti, tai isirasome nera pazymius
 
+function marksAverage(marks) {
+   if (marks.length === 0) {
+    return 'Vidurkis: nera pazymiu.';
+   }
+
+   if (marks.length === 1) {
+    return 'Vidurkis: ' + marks[0];
+   }
+
+   if (marks.length === 2) {    
+    return 'Vidurkis: ' + ((marks[0] + marks[1]) / 2);        // bet remiantis vakar pamoka galime ir taip: const sum = marks[0] + marks[1];
+   }                                                         // return 'Vidurkis: ' + (sum / marks.length);
+    
+   if (marks.length === 3) {                                
+   const sum = marks[0] + marks[1] + marks[2];                                                       
+   return 'Vidurkis: ' + (sum / marks.length);
+   }
+}
+
+const jonoPazymiai = [];
+console.log(jonoPazymiai);
+console.log(marksAverage(jonoPazymiai));
+
+// masyvo metodas yra push
+jonoPazymiai.push(10);
+console.log(jonoPazymiai);
+console.log(marksAverage(jonoPazymiai));
+
+jonoPazymiai.push(2);
+console.log(jonoPazymiai);
+console.log(marksAverage(jonoPazymiai));
+
+jonoPazymiai.push(8);
+console.log(jonoPazymiai);
+console.log(marksAverage(jonoPazymiai));
+
+jonoPazymiai.push(4);
+console.log(jonoPazymiai);
+console.log(marksAverage(jonoPazymiai));
+
+function marksAverage(marks) {
+    if (marks.length === 0) {
+     return 'Vidurkis: nera pazymiu.';
+    }
+// pavyzdyje blogai parinkti operatoriai, del to meta NaN
+let sum = 0;
+// yra bent vienas pazymys
+if (marks.length < 2) {
+    sum += marks[0];
+}
+// yra bent 2 pazymiai
+if (marks.length < 3) {
+    sum += marks[1];
+}
+    return 'Vidurkis: ' + (sum / marks.length);
+}
+// sita dalis labai gera, nes jei neturi pazymu, turi aiskia zinute.
+function marksAverage(marks) {
+    if (marks.length === 0) {
+     return 'Vidurkis: nera pazymiu.';
+    }
+//  bandeme apzaisti, kaip man susumuoti visus masyve esancius pazymius, nezinant kiek ju bus
+let sum = 0;
+// sis pvz rod, ka tie if daro, tai jei turi dar daugiau pazymiu, tai ir paima sekanti if. 
+if (marks.length > 0) {
+    sum += marks[0];
+}
+
+if (marks.length > 1) {
+    sum += marks[1];
+}
+
+if (marks.length > 2) {
+    sum += marks[2];
+}
+if (marks.length > 3) {
+    sum += marks[3];
+}
+
+    return 'Vidurkis: ' + (sum / marks.length);
+}
+
+function marksAverage(marks) {
+    if (marks.length === 0) {
+     return 'Vidurkis: nera pazymiu.';
+    }
+    let sum = 0;
+    return 'Vidurkis: ' + (sum / marks.length);
+}
+  
+// ????
+
+console.clear();

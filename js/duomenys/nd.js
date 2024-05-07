@@ -375,7 +375,6 @@ const w11 = ['platus', 'pasauli', 'labas'] ;
 const sentense1 = (w3 + ', ' + w2 + ' ' + w1);
 console.log(sentense1);
 
-
 // 3.	Apskaičiuoti vertę iš sąrašų kurių verčių tipas yra skaičiai, pagal pateiktą logiką
 // a.	1-2+3-4+5
 // b.	Rezultatą išvesti į console
@@ -389,14 +388,35 @@ console.log(cents[2]);
 console.log(cents[3]);
 console.log(cents[4]);
 
-// const cents0 = 12;
-// const cents1 = 8;
-// const cents2 = 5;
-// const cents3 = 19;
-// const cents4 = 20;
+console.clear();
 
-// const numberr = cents0 - cents1 + cents2 - cents3 + cents4;
-// console.log(numberr);
+//Ciklo for panaudojimas
+// 1.	Suskaičiuoti ką gausime susumavus skaičius intervale tarp (imtinai):
+// a.	0 … 0
+// b.	0 … 4
+// c.	0 … 100
+// d.	574 … 815
+// e.	-50 … 50
+// f.	-70 … 30
+
+// 2.	panaudojant ciklą perrašyti tekstinio tipo kintamųjų reikšmes iš kito galo:
+// a.	pvz.: “abcdef” -> “fedcba”
+const i = 'labas';
+if (let i = 6; i < 8; i++) {
+    console.log(i);
+}
+
+// 3.	Suskaičiuoti, kiek nurodytame intervale yra skaičių, kurie dalijasi be liekanos iš 3, 5 ir 7 atskirai:
+// a.	0 - 11
+// b.	8 - 31
+// c.	-18 - 18
+// d.	rezultatą pateikti tokiu formatu:
+// i.	Skaičių intervale tarp 0 ir 11, besidalijančių be liekanos iš 3 yra 4 vienetai.
+// ii.	Skaičių intervale tarp 0 ir 11, besidalijančių be liekanos iš 5 yra 3 vienetai.
+// iii.	Skaičių intervale tarp 0 ir 11, besidalijančių be liekanos iš 7 yra 2 vienetai.
+
+
+
 
 
 
