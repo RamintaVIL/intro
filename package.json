@@ -11,7 +11,8 @@
     "boolean": "node --watch ./js/duomenys/boolean.js",
     "string": "node --watch ./js/duomenys/string.js",
     "number": "node --watch ./js/duomenys/number.js",
-    "nd": "node --watch ./js/duomenys/nd.js",
+    "nd": "node --watch ./js/namu-darbai/nd.js",
+    "mini": "node --watch ./js/namu-darbai/mini.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
