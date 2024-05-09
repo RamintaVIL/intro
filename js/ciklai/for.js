@@ -15,7 +15,7 @@ FOR - pagrindinis ciklas (en. loop)
 console.log('START');
 
 // i - iteratios, skaiciuoja kelinta, bet i galime keisti, kad ir i zodi 'pomidoras'
-// i++ - didina kintamiji 1 vnt. Galima i = i + 1 arba i +=1; galima didinti ir didesniu sk. pvz i+=5, jei finisas toleja rankames  ++, arteja --
+// i++ - didina kintamiji 1 vnt. Galima pasirasyt ir kitais variantais i = i + 1; i += 1; i++, ++ i, i galima didinti ir didesniu sk. pvz i+=5, jei finisas toleja renkames  ++, arteja --
 // () parametras nurodo, tai kiek kartu man kazka daryti
 // i=0 yra kaip ir startas, finisas <10. i++ nurodo kokiu zingsniu keliauju i prieki, dazniausiai einame 1. 
 
@@ -70,12 +70,6 @@ console.log('Finish');
 console.clear();
 
 const colors = ['white', 'black', 'red', 'green', 'blue', 'yellow', 'purple']
-console.log(colors);
-console.log(colors[0]);
-console.log(colors[1]);
-console.log(colors[2]);
-console.log(colors[3]);
-console.log(colors[4]);
 
 console.log('--------');
 
