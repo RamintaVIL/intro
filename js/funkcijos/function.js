@@ -9,6 +9,13 @@ Input => Function() => Output
 function funkcijosPavadinimas() {
 }
 
+function doSomething () {
+    // 1) Input (parametru) validavimas
+    // 2) Vykdoma logika
+    // 3) Gauto rezultato validavimas
+    // 4) Graziname rezultata
+}
+
 const a = funkcijosPavadinimas();
 console.log(a);
 
