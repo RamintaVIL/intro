@@ -140,34 +140,22 @@ function arLyginis(number) {
 
 return arLyginis(6);
 
-// 4.	Funkcija pavadinimu “didziausiasSkaiciusSarase”:
-// a.	priima vieną kintamąjį
-// b.	jei perduotas kintamasis nėra sąrašo tipo, tai išveda pranešimą “Pateikta netinkamo tipo reikšmė.”
-// c.	jei sąrašas yra tuščias, tai išveda pranešimą “Pateiktas sąrašas negali būti tuščias.”
-// d.	priešingu atveju, funkcija tęsia darbą
-// e.	pereina per visą pateiktą sąrašą ir į atskirą kintamąjį įsimena skaičių, kuris tuo metu yra didžiausias
-// f.	gražina didžiausią surastą skaičių
-// g.	TESTAI:
-// 
-
-console.log ('----->');
-
-const arr = [1, 2, 3];
+let arr = [1, 2, 3];
 function didziausiasSkaiciusSarase(arr) {
-  let didziausias = arr[0];
+  let didziausias = 0;
   for (let i = 0; i <= arr.length; i++) {
     if (arr[i] > didziausias) {
       didziausias += arr[i];
-  }
+    }
 }
-return console.log(didziausiasSkaiciusSarase(arr));
+return didziausias;
 }
 
 console.log(didziausiasSkaiciusSarase([1, 2, 3]));
-console.log( didziausiasSkaiciusSarase( [ 1 ] ) );
-console.log( didziausiasSkaiciusSarase( [ -5, 78, 14, 0, 18 ] ) );
-console.log( didziausiasSkaiciusSarase( [ 69, 69, 69, 69, 66 ] ) );
-console.log( didziausiasSkaiciusSarase( [ -1, -2, -3, -4, -5, -6, -7, -8 ] ) );
+console.log(didziausiasSkaiciusSarase([ 1 ]));
+console.log(didziausiasSkaiciusSarase([ -5, 78, 14, 0, 18 ]));
+console.log(didziausiasSkaiciusSarase([ 69, 69, 69, 69, 66 ]));
+console.log(didziausiasSkaiciusSarase([ -1, -2, -3, -4, -5, -6, -7, -8 ]));
 
 // i.	console.log( didziausiasSkaiciusSarase( “pomidoras” ) );
 // 1.	rezultatas: “Pateikta netinkamo tipo reikšmė.”
