@@ -2,9 +2,7 @@
 // a.	nepriima jokių kintamųjų, NIEKO
 // b.	neatlieka jokios vidinės logikos, NIEKO, tik jis turi grazinti
 // c.	gražina boolean tipo reikšmę “false”, REIKIA
-// d.	TESTAS:
-// i.	console.log( tusciaFunkcija() );
-// ii.	rezultatas: false
+
 
 function tusciaFunkcija() {
     return false;
@@ -83,7 +81,8 @@ return answer;
   - Atskirame kintamajame issisaugome sandaugos reiksmes
   - Graziname sandaugos reiksmes
   */ 
-console.clear();
+
+  console.clear();
 // 3.	Funkcija pavadinimu “skaitmenuKiekisSkaiciuje”:
 // +.	priima vieną kintamąjį
 // b.	jei perduotas kintamasis nėra skaičiaus tipo, tai išveda pranešimą “Pateikta netinkamo tipo reikšmė.”
@@ -106,15 +105,44 @@ console.clear();
 - 1.	rezultatas: “Pateikta netinkamo tipo reikšmė.”
 */
 
-function skaitmenuKiekisSkaiciuje(n) {
-  const nAsText = '' + n; 
-    return nAsText.length; 
+// function skaitmenuKiekisSkaiciuje(n) {
+//   const nAsText = '' + n; 
+//   // desimtainis ir neigiamas
+//   if (n % 1 === 0 && n < 0){
+//     return nAsText.length - 2; 
+//   }
+//   // desimtainis
+//   if (n % 1 === 0) {
+//     return nAsText.length - 1;
+//   }
+//   // neigiamas
+//   if (n < 0) {
+//     return nAsText.length - 1;
+//   }
+//   return nAsText.length;
+//    }
+
+   function skaitmenuKiekisSkaiciuje(n) {
+    const nAsText = '' + n;
+    const size = nAsText.length;
+// desimtainis
+    if (n % 1 !== 0) {
+      size--;
+    }
+
+    // neigiamas
+    if (n< 0) {
+      size--;
+    }
+    return size;
    }
 console.log(skaitmenuKiekisSkaiciuje(5));
 console.log(skaitmenuKiekisSkaiciuje(781));
 console.log(skaitmenuKiekisSkaiciuje(37060123456));
 console.log(skaitmenuKiekisSkaiciuje(-781));
-console.log(skaitmenuKiekisSkaiciuje(7.811));
+console.log(skaitmenuKiekisSkaiciuje(7.81111));
+console.log(skaitmenuKiekisSkaiciuje(-7.811));
+console.log(skaitmenuKiekisSkaiciuje(NaN));
 
 function skaitmenuKiekisSkaiciuje(n) {
 if (typeof n !== 'number') {
@@ -165,75 +193,4 @@ console.log(didziausiasSkaiciusSarase([ -1, -2, -3, -4, -5, -6, -7, -8 ]));
 
 
 
-
-// // Is case
-// function basic (operation, number1, number2) {
-//   if (operation === '+') {
-//     return number1 + number2;
-//   } else if (operation === '-') {
-//     return number1 - number2;
-//   } else if (operation === '*') {
-//     return number1 * number2;
-//   } else if (operation === '/') {
-//     return number1 / number2;
-// }
-// }
- 
-// console.log(basic("+", 4, 7));
-// console.log(basic("-", 15, 18));
-// console.log(basic("*", 5, 5));
-// console.log(basic("/", 49, 7));
-
-// console.clear();
-
-// hello - english
-// ciao - italian
-// salut - french
-// hallo - german
-// hola - spanish
-// ahoj - czech 
-// czesc - polish
- 
-// function validateHello (greetings) {
-//   let language = '';
-
-//   if (greetings === 'hello') {
-//     language = 'english';
-//   } else if (greetings === 'ciao') {
-//     language = 'italian';
-//   } else if (greetings === 'salut') {
-//     language = 'frensh';
-//   } else if (greetings = 'hallo') {
-//     language = 'spanish';
-//   } else if (greetings === 'ahoj') {
-//    language = ' czech';
-//   } else if (greetings === 'czesc') {
-//     language = 'polish';
-//   } else {
-//     console.log('it is not world');
-//   }
-//   return greetings + '-->' + language;
-// }
-
-// console.log(validateHello('greetings'));
-
-// function positiveSum(arr) {
-
- 
-  
-// }
-
-
-// function positiveSum(arr) {
-//   let sum = 0;
-//   for (let i = 0; i < arr.lenght; i++) {
-//       if (arr[i] > 0) {
-//     sum += arr[i];
-//     }
-//   } 
-//   return sum;
-// }
-
-// const number = [1,-2,3,4,5];
-// console.log(positiveSum(numbers));
 

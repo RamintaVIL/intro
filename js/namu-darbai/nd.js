@@ -296,6 +296,7 @@ if (8 >= 10) {
 }
 
 // 2.	Išvesti teksto tipo kintamųjų ilgius
+// siuo atveju skaiciuojame kiek sakinyje yra zodziu
 const sentence = ['Nežinau', 'kokios', 'spalvos', 'batelius', 'turiu', 'namuose'];
 const ilgis1 = sentence.length ;
 console.log(sentence, ilgis1.length);
@@ -304,14 +305,14 @@ const sentence1 = ['Manau', 'pirksiu', 'geltonos'];
 const ilgis2 = sentence1.length ;
 console.log(ilgis2);
 
+// skliaustuose isirasome str.1, tam kad konsoleje parodytu zodi, o str1.length kiek zodyje yra raidziu.
+// space yra simbolis
 str1 = 'labas';
 str2 = 'rytas';
 str3 = 'Lietuva';
 console.log(str1, str1.length); 
 console.log(str2, str2.length); 
-// skliaustuose isirasome str.1, tam kad konsoleje parodytu zodi, o str1.length kiek zodyje yra raidziu.
 console.log(str3, str3.length); 
-// space yra simbolis
 
 // 3.	Tarpusavyje palyginti teksto tipo kintamųjų ilgius:
 // a.	kuris didesnis
@@ -320,7 +321,6 @@ if (str1.length === str3.length) {
 } else {
     console.log('ne');
 }
-
 if (ilgis1 > ilgis2) {
     console.log('TAIP');
 } else {
@@ -411,27 +411,9 @@ if (ilgiis <= ilgiis1) {
 
 console.clear();
 
-
 //Ciklo for panaudojimas
 // 1.	Suskaičiuoti ką gausime susumavus skaičius intervale tarp (imtinai):
 // a.	0 … 0
-// destytojo pvz
-function intervalSum(start, finish) {
-    let ans = 0; 
-    //inicijuosi kintamasis kuris kaupia atsakyma
-    for (let h = start; h < finish; h++) {
-    answer += i;
-    }
-    return ans;
-}
-console.log(intervalSum(0, 0)); 
-console.log(intervalSum(0, 4)); 
-console.log(intervalSum(0, 100)); 
-console.log(intervalSum(574, 815));
-console.log(intervalSum(-50, 50)); 
-console.log(intervalSum(-70, 30)); 
-
-//cia mano pvz
 let sum4 = 0;
 for (let n = 0; n < 0 ; n++) {
     sum4 += n;
@@ -473,22 +455,41 @@ for (let n = -70; n < 30; n++) {
 }
 console.log(suma4);
 
+function intervalSum(start, finish) {
+    let answ = 0;
+    for (let i = start; i <+ finish; i++) {
+        answ +=i
+    }
+    return answ;
+}
+console.log(intervalSum(0, 0)); 
+console.log(intervalSum(0, 4)); 
+console.log(intervalSum(0, 100)); 
+console.log(intervalSum(574, 815));
+console.log(intervalSum(-50, 50)); 
+console.log(intervalSum(-70, 30)); 
+
+
 // 2.	panaudojant ciklą perrašyti tekstinio tipo kintamųjų reikšmes iš kito galo:
 // a.	pvz.: “abcdef” -> “fedcba”
 // destytojo pvz
 function reverseString(text) {
-    let answer = '';
-    for (let i = 0; i < text.length; i++) {
-        console.log(i, text[i]);
+    let answer = ''; 
+   for (let i = 0; i < text.length; i++) {
+answer = text[i] + answer;
+   }  
+    return answer;
+}
+
+// for (let i = 0; i < text.length; i++) {
+// console.log(i, text[i]);
 // istraukia kiekviena raide + kos yra jos skaicius masyve            }
-     answer += text [text.length - 1 - i]; 
-     // cia imu indexsus imu is eiles, o raides randu is galo   
-}
-    return text;
-}
+// answer += text[text.length - 1 - i]; 
+     // cia imu indexsus imu is eiles, o raides randu is galo 
 
 console.log(reverseString('labas'), '-->', 'sabal');
 console.log(reverseString('alus'), '-->', 'sula');
+
 // arba
  // function reverseString1(text) {
     // let answer = '';
@@ -543,29 +544,23 @@ for (let raide = raides.length; raide > -1; raide--) {
 }
 
 console.clear();
+
 // 3.	Suskaičiuoti, kiek nurodytame intervale yra skaičių, kurie dalijasi be liekanos iš 3, 5 ir 7 atskirai:
 // d.	rezultatą pateikti tokiu formatu:
 // i.	Skaičių intervale tarp 0 ir 11, besidalijančių be liekanos iš 3 yra 4 vienetai.
 // ii.	Skaičių intervale tarp 0 ir 11, besidalijančių be liekanos iš 5 yra 3 vienetai.
 // iii.	Skaičių intervale tarp 0 ir 11, besidalijančių be liekanos iš 7 yra 2 vienetai.
 // a.	0 - 11
-    // function numberCount(start, finish, step) {
-    // let answer = 0;
-
-    // for (let i = start; i <= finish; i ++) {
-
-        // jeigu skaiciu dalinant is step liekana yra 0, tai answer didiname vienu vnt.
-        //if (i % step === 0) {
-            //  answer++;
-           //  console.log(i);
-          // rodo kurie skaiciai dalina be logikos
-       // }
-        // console.log (i, '>>>', i % step);
-       // answer++; 
-
-// Skaičių intervale tarp 0 ir 11, besidalijančių be liekanos iš 3 yra 4 vienetai.
-   // return 'Skaičių intervale tarp ' + start + ' ir ' + finish + ', besidalijančių be liekanos iš ' + step + ' yra ' + answer + ' vienetai.';
-   // }
+    function numberCount(start, finish, step) {
+        let answer7 = 0;
+        for (let i = start; i <= finish; i ++) {
+     // jeigu skaiciu dalinant is step liekana yra 0, tai answer didiname vienu vnt.
+             if (i % step === 0) {
+             answer7++;
+             }
+        }
+        return 'Skaičių intervale tarp ' + start + ' ir ' + finish + ', besidalijančių be liekanos iš ' + step + ' yra ' + answer7 + ' vienetai.'; 
+    }
 console.log(numberCount(0, 11, 3));
 console.log(numberCount(0, 11, 5));
 console.log(numberCount(0, 11, 7));
@@ -578,7 +573,6 @@ console.log(numberCount(-18, 18, 3));
 console.log(numberCount(-18, 18, 5));
 console.log(numberCount(-18, 18, 7));
 
-function numberCount () {
     /* 
      - reikia kintamojo kuris skaiciuoja kiek turiu sk. kurie dalijasi be liekanos
      - einam per intervala nuo START iki Finish; jei matau zodziu NUO IKI, vadinasi turiu cikla
@@ -588,53 +582,4 @@ function numberCount () {
         - o jeigu ne
           - darau ta arba ta( cia vadinasi turiu else if) 
      - graziname answer
-     */ 
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+     */
