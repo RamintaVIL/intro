@@ -38,3 +38,10 @@ Duomenu tipai:
 - null
 - undefined
 */
+
+/*
+Duomenu iniciavimo budai:
+- const (default)
+- let (kai turi intencija keisti reiksmes)
+- var (seniena/pirmtakas, kurio nereiketu naudoti, nebent zinai ka darai)
+*/
