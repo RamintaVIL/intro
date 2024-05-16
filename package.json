@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "method:string": "node --watch ./js/metodai/string.js",
     "method:number": "node --watch ./js/metodai/number.js",
     "typeof": "node --watch ./js/duomenys/typeof.js",
     "for": "node --watch ./js/ciklai/for.js",
@@ -16,6 +17,7 @@
     "nd": "node --watch ./js/namu-darbai/nd.js",
     "code-wars": "node --watch ./js/namu-darbai/code-wars.js",
     "mini": "node --watch ./js/namu-darbai/mini.js",
+    "clock": "node --watch ./js/namu-darbai/clock.js",
     "minii": "node --watch ./js/namu-darbai/minii.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
