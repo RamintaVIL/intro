@@ -102,4 +102,3 @@ console.log(d.toFixed(20)); // kiekis po kablelio
 const e = 5.1485;
 console.log(e); 
 console.log(e.toFixed(20));
-
