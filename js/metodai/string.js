@@ -128,7 +128,7 @@ console.log('trimStart()');
 console.log('  .Saule   sviecia'.trimStart());
 console.log('  Saule   sviecia    .'.trimStart());
 
-console.log ('---------------------->');
+console.log('---------------------->');
 console.log('split()');
 console.log(' '.split());
 console.log('Pomidoras'.split());
@@ -137,3 +137,4 @@ console.log('NaN'.split());
 console.log('12'.split());
 console.log('12, 13, 14, -7'.split());
 console.log('12, 13, 14, -7'.split(1,));
+console.log('Pomidoras'.split('s'));
