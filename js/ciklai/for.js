@@ -14,7 +14,7 @@ FOR - pagrindinis ciklas (en. loop)
 
 console.log('START');
 
-// i - iteratios, skaiciuoja kelinta, bet i galime keisti, kad ir i zodi 'pomidoras'
+// i - iteracijos, skaiciuoja kelinta, bet i galime keisti, kad ir i zodi 'pomidoras'
 // i++ - didina kintamiji 1 vnt. Galima pasirasyt ir kitais variantais i = i + 1; i += 1; i++, ++ i, i galima didinti ir didesniu sk. pvz i+=5, jei finisas toleja renkames  ++, arteja --
 // () parametras nurodo, tai kiek kartu man kazka daryti
 // i=0 yra kaip ir startas, finisas <10. i++ nurodo kokiu zingsniu keliauju i prieki, dazniausiai einame 1. 
