@@ -6,21 +6,20 @@ Function - funkcija, perpanaudojama logika
 Input => Function() => Output
 */
 
-function funkcijosPavadinimas() {
-}
-
-function doSomething () {
+// function doSomething () {
     // 1) Input (parametru) validavimas
     // 2) Vykdoma logika
     // 3) Gauto rezultato validavimas
     // 4) Graziname rezultata
-}
+// }
 
+function funkcijosPavadinimas() {
+}
 const a = funkcijosPavadinimas();
 console.log(a);
 
 function empty() {
-    return undefined; 
+    return undefined;    
 }
 
 console.log(empty());
@@ -57,6 +56,12 @@ function intro(name, surname) {
 console.log(intro('Jonas', 'Jonaitis'));
 console.log(intro('Petras', 'Petraitis'));
 console.log(intro('Ona', 'Onaityte'));
+
+// pvz. kaip naudojant backtick galime grąžinti tą patį rezultatą.
+function intro(name, surname) {
+    return `Laba diena, as esu ${name} ${surname}!`;
+}
+console.log(intro('Jonas', 'Jonaitis'));
 
 /*
 Input:
@@ -160,3 +165,4 @@ function place(Country, number) {
     return 'As gyvenu ' + Country + ', jau ' + number + ' metu ' + ".";
  }
 console.log(place('Lietuvoje', 40));
+
