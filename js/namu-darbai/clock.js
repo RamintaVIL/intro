@@ -16,7 +16,7 @@ for (let g = 1; g <= 12; g++) {
 }
 
 // prisideda 15 min. Vieno ciklo dalyje spausdinu, visus galimus rezultatus
-for ( let val = 1; val <= 4; val++) {
+for (let val = 1; val <= 4; val++) {
    console.log('-----------');
    console.log(val + ':00');
    console.log(val + ':15');
@@ -105,7 +105,7 @@ for (let val =0; val < 24; val++) {
 
 /*
 Matrix
-- normali matrica yra tada, kai eiluteje yra vienos skaitmenu kiekis
+- normali matrica yra tada, kai eiluteje yra vienodas skaitmenu kiekis
 */
 const matrix = [10, 2, 8, 4, 6, 777 ]; 
 console.log(matrix);
