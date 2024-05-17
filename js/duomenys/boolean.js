@@ -167,6 +167,21 @@ if (-1222) {
 
 console.clear();
 
+// boolean paversti i string'ą
+console.log('' + true);
+console.log(true.toString())   // cia boolean method
 
+// jis lygina skaičių su string'u ir kai naudojame dvigubą == sistema neatpažįsta, kad tai skirtingi duomenų tipai.
+// 3 === primiausiai tikrinamas duomenų tipas, tik po tikrina reikšmes. Tai priskiriame griežtai lygybei.
+// patarimas, 2 == nenaudoti, nes gali būti daugiau klaidų
+if (4 === '4') {
+    console.log('Taip');
+} else {
+    console.log('Ne');
+}
 
-
+if (4 !== 4) {
+    console.log('taip')
+} else {
+    console.log('ne')
+}
