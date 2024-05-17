@@ -45,13 +45,13 @@ if (4 > 2 ) {
     console.log('NE, maziau');
 }
 
-if (4 == 2 ) {
+if (4 === 2 ) {
     console.log('TAIP, lygu');
 } else {
     console.log('NE, nelygu');
 }
 
-if (4 != 7 ) {
+if (4 !== 7 ) {
     console.log('TAIP, nelygu');
 } else {
     console.log('NE, lygu');
