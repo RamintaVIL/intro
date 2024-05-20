@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "method:array": "node --watch ./js/metodai/array.js",
     "arrow": "node --watch ./js/funkcijos/arrow.js",
     "method:string": "node --watch ./js/metodai/string.js",
     "method:number": "node --watch ./js/metodai/number.js",
