@@ -23,7 +23,7 @@ console.log(didziausiasSkaiciusSarase([-1, -2, -3, -4, -5, -6, -7, -8]));
 console.log(didziausiasSkaiciusSarase('pomidoras'));
 console.log(didziausiasSkaiciusSarase([]));
 
-
+console.log('------------------------------');
 // 5.	Funkcija pavadinimu “isrinktiRaides”:
 
 function isrinktiRaides(tekstas, skaicius) {
@@ -38,19 +38,21 @@ function isrinktiRaides(tekstas, skaicius) {
    } else if (skaicius > tekstas.length) {
     return 'Antrasis kintamasis turi būti ne didesnis už pateikto teksto ilgį.';
    } else {
-    let pasirinktosRaides = tekstas[0];
-    for (let l = 0; l < tekstas.length; l++) { 
-        pasirinktosRaides = tekstas[l];
+    let pasirinktosRaides = '';
+    for (let l = 0; l < tekstas.length; l += skaicius) { 
+        pasirinktosRaides += tekstas[l];
     } 
     return pasirinktosRaides;
    }
    }
+
 console.log(isrinktiRaides('abcdefg', 2));
 console.log(isrinktiRaides('abcdefghijkl', 3));
 console.log(isrinktiRaides('abc', 0));
 console.log(isrinktiRaides('abc', 4));
 console.log(isrinktiRaides(1561, 2));
 
+console.log('------------------------------');
 // +	Funkcija pavadinimu “dalyba”:
 
 function dalyba(number1, number2) {
@@ -62,6 +64,10 @@ return "Number1 nera skaicius";
  const rezultatas = number1/number2;
  return rezultatas;
  }
+console.log(dalyba(3.14, 3));
+console.log(dalyba(3.14, 3.14));
+console.log(dalyba(-8, 2));
+console.log(dalyba(8, 2));
 console.log(dalyba(0, 0));
 console.log(dalyba(0, 5));
 console.log(dalyba(5, 0));
