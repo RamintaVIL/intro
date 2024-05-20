@@ -102,7 +102,6 @@ for (let val =0; val < 24; val++) {
     }
 }
 
-
 /*
 Matrix
 - normali matrica yra tada, kai eiluteje yra vienodas skaitmenu kiekis

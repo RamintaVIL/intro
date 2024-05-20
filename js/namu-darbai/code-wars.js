@@ -61,35 +61,6 @@ console.log(areYouPlayingBanjo("Ringo"));
 console.log(areYouPlayingBanjo("bravo"));
 console.log(areYouPlayingBanjo("rolf"));
 
-
-
-// I'm new to coding and now I want to get the sum of two arrays... Actually the sum of all their elements. I'll appreciate for your help.
-// P.S. Each array includes only integer numbers. Output is a number too.
-
-
-// function arrayPlusArray(arr1, arr2) {
-// const arr1Sum = arr1[0] + arr1[1] + arr1[2];
-// const arr2Sum = arr2[0] + arr2[1] + arr2[2];
-//     return arr1Sum + arr2Sum;
-// }
-
-// function arrayPlusArray(arr1, arr2) {
-//     let sum = 0;
-//  for (let i = 0; i <= arr1.length; i++){
-//       sum1 += arr1[i];
-//  }
-//  for (let c = 0; c < arr2.length; c++){
-//       sum2 += arr2[c];
-
-//         return arr1 + arr2;
-//     }
-// }  
-
-// console.log(arrayPlusArray([1, 2, 3], [4, 5, 6]));
-// console.log(arrayPlusArray([-1, -2, -3], [-4, -5, -6]));
-// console.log(arrayPlusArray([0, 0, 0], [4, 5, 6]));
-// console.log(arrayPlusArray([100, 200, 300], [400, 500, 600]));
-
 /*
 https://www.codewars.com/kata/57ab2d6072292dbf7c000039/train/javascript
 */
@@ -196,6 +167,59 @@ console.log(peopleWithAgeDrink(20));
 console.log(peopleWithAgeDrink(29));
 console.log(peopleWithAgeDrink(30));
 
+function typeValidation(variable,type) {
+    if (typeof variable === type) {
+      return 'true';
+    } else {
+      return 'false';
+    }
+   }
+   console.log(typeValidation(42, "number"));
+   console.log(typeValidation("42", "number"));
+  
+   function arrayPlusArray(arr1, arr2) {
+      let arr1Sum = 0;
+      let arr2Sum = 0;
+    for (let i = 0; i < arr1.length; i++) {
+        arr1Sum += arr1[i];
+    }   
+    for (let m = 0; m < arr2.length; m++) {
+      arr2Sum += arr2[m];
+      }
+  return totalSum = arr1Sum + arr2Sum;
+        }
+  console.log(arrayPlusArray([1, 2, 3], [4, 5, 6]));
+  console.log(arrayPlusArray([-1, -2, -3], [-4, -5, -6]));
+  console.log(arrayPlusArray([0, 0, 0], [4, 5, 6]));
+  console.log(arrayPlusArray([100, 200, 300], [400, 500, 600]));
+  console.log('---------------------------------------------------');
+//   You get an array of numbers, return the sum of all of the positives ones.
+//   Example [1,-4,7,12] => 1 + 7 + 12 = 20
+//   Note: if there is nothing to sum, the sum is default to 0.
+
+function positiveSum(arr) {
+    let sum = 0; 
+    for (let k = 0; k < arr.length; k++) {
+        if (arr[k] > 0) {
+            sum += arr[k];
+         }
+    }
+    return sum;
+}
+console.log(positiveSum([1,2,3,4,5]));
+console.log(positiveSum([1,-2,3,4,5]));
+console.log(positiveSum([]));
+console.log(positiveSum([-1,-2,-3,-4,-5]));
+console.log(positiveSum([-1,2,3,4,-5]));
+
+console.clear();
+function isPythagoreanTriple(integers) {
+    return Math.hypot(integers); 
+  }
+
+console.log(isPythagoreanTriple([3, 4, 5]));
+console.log(isPythagoreanTriple([3, 5, 9]));
+
 // DESCRIPTION:
 // Create a function called _if which takes 3 arguments: a value bool and 2 functions (which do not take any parameters): func1 and func2
 // When bool is truthy, func1 should be called, otherwise call the func2.
@@ -215,46 +239,34 @@ console.log(peopleWithAgeDrink(30));
 // console.log("'false' function unexpectedly called");
 // console.log ('-------------');
 
-console.clear();
 
- function typeValidation(variable,type) {
-  if (typeof variable === type) {
-    return 'true';
-  } else {
-    return 'false';
+
+// function findMultiples(integer, limit) {
+// let multiples = [];
+//     for (let a = integer; a <= limit; a++ ) {
+//         if (a % integer === 0) {
+//     }
+//     }
+//    return multiples;
+//   }
+//   console.log(findMultiples(5, 25))
+// //   console.log(findMultiples(1, 2), [1, 2])
+// //   console.log(findMultiples(5, 7), [5])
+// //   console.log(findMultiples(4, 27), [4, 8, 12, 16, 20, 24])
+// //   console.log(findMultiples(11, 54), [11, 22, 33, 44])
+
+function arrayMadness(a, b) {
+    // Ready, get set, GO!!!
   }
- }
 
- console.log(typeValidation(42, "number"));
- console.log(typeValidation("42", "number"));
-
- function arrayPlusArray(arr1, arr2) {
-    let arr1Sum = 0;
-    let arr2Sum = 0;
-  for (let i = 0; i < arr1.length; i++) {
-      arr1Sum += arr1[i];
-  }   
-  for (let m = 0; m < arr2.length; m++) {
-    arr2Sum += arr2[m];
-    }
-return totalSum = arr1Sum + arr2Sum;
-      }
-
-console.log(arrayPlusArray([1, 2, 3], [4, 5, 6]));
-console.log(arrayPlusArray([-1, -2, -3], [-4, -5, -6]));
-console.log(arrayPlusArray([0, 0, 0], [4, 5, 6]));
-console.log(arrayPlusArray([100, 200, 300], [400, 500, 600]));
-
-function findMultiples(integer, limit) {
-let multiples = [];
-    for (let a = integer; a <= limit; a++ ) {
-        if (a % integer === 0) {
-    }
-    }
-   return multiples;
-  }
-  console.log(findMultiples(5, 25))
-//   console.log(findMultiples(1, 2), [1, 2])
-//   console.log(findMultiples(5, 7), [5])
-//   console.log(findMultiples(4, 27), [4, 8, 12, 16, 20, 24])
-//   console.log(findMultiples(11, 54), [11, 22, 33, 44])
+  console.log(arrayMadness([4,5,6],[1,2,3]), true);
+  console.log(arrayMadness([5,6,7],[4,5,6]), false);
+  console.log(arrayMadness([4,5,6],[3,4,5]), false);
+  console.log(arrayMadness([3,4,5],[2,3,4]), false);
+  console.log(arrayMadness([2,3,4],[1,2,3]), false);
+  console.log(arrayMadness([1,2,3],[0,1,2]), true);
+  console.log(arrayMadness([5,3,2,4,1],[15]), false);
+  console.log(arrayMadness([2,5,3,4,1],[3,3,3,3,3]), false);
+  console.log(arrayMadness([1,3,5,2,4],[2,2,2,2,2,2,2,1]), false);
+  console.log(arrayMadness([1,2,3,4,5],[2,2,2,2,2,2,1,1,1]), true);
+  console.log(arrayMadness([2,4,6,8,10,12,14],[1,3,5,7,9,11,13]), false);
