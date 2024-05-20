@@ -29,7 +29,7 @@ console.log('------------------------------');
 function isrinktiRaides(tekstas, skaicius) {
    if (typeof tekstas !== 'string') {
     return 'Pirmasis kintamasis yra netinkamo tipo.';
-   } else if (tekstas.length  === [0] < 100) {
+   } else if (tekstas.length  === 0 > 100) {
      return 'Pirmojo kintamojo reikšmė yra netinkamo dydžio.';
    } else if (typeof skaicius !== 'number') {
     return 'Antrasis kintamasis yra netinkamo tipo.';
@@ -38,19 +38,19 @@ function isrinktiRaides(tekstas, skaicius) {
    } else if (skaicius > tekstas.length) {
     return 'Antrasis kintamasis turi būti ne didesnis už pateikto teksto ilgį.';
    } else {
-    let pasirinktosRaides = '';
-    for (let l = 0; l < tekstas.length; l += skaicius) { 
-        pasirinktosRaides += tekstas[l];
+    let isrinktiRaides = '';
+    for (let l = 0; l < tekstas.length; l++) { 
+      isrinktiRaides += tekstas[l];
     } 
-    return pasirinktosRaides;
+    return isrinktiRaides;
    }
    }
 
 console.log(isrinktiRaides('abcdefg', 2));
-console.log(isrinktiRaides('abcdefghijkl', 3));
-console.log(isrinktiRaides('abc', 0));
-console.log(isrinktiRaides('abc', 4));
-console.log(isrinktiRaides(1561, 2));
+// console.log(isrinktiRaides('abcdefghijkl', 3));
+// console.log(isrinktiRaides('abc', 0));
+// console.log(isrinktiRaides('abc', 4));
+// console.log(isrinktiRaides(1561, 2));
 
 console.log('------------------------------');
 // +	Funkcija pavadinimu “dalyba”:
