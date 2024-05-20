@@ -485,7 +485,7 @@ answer = text[i] + answer;
 // console.log(i, text[i]);
 // istraukia kiekviena raide + kos yra jos skaicius masyve            }
 // answer += text[text.length - 1 - i]; 
-     // cia imu indexsus imu is eiles, o raides randu is galo 
+     // cia imu indexsus is eiles, o raides randu is galo 
 
 console.log(reverseString('labas'), '-->', 'sabal');
 console.log(reverseString('alus'), '-->', 'sula');
