@@ -4,6 +4,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "math": "node --watch ./js/metodai/math.js",
+    "ternary": "node --watch ./js/palyginimas/ternary.js",
     "method:array": "node --watch ./js/metodai/array.js",
     "arrow": "node --watch ./js/funkcijos/arrow.js",
     "method:string": "node --watch ./js/metodai/string.js",
