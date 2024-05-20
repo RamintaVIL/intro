@@ -1,3 +1,15 @@
+// You will be given an array a and a value x. All you need to do is check whether the provided array contains the value.
+// Array can contain numbers or strings. X can be either.
+// Return true if the array contains the value, false if not.
+
+function check (a, x) {
+    return a.includes(x);   
+}
+console.log(check([66, 101], 66));
+console.log(check([101, 45, 75, 105, 99, 107], 107), true);
+console.log(check(['t', 'e', 's', 't'], 'e'), true);
+console.log(check(['what', 'a', 'great', 'kata'], 'kat'), false);
+
 function whatday (num) {
     if (num === 1) {
         return 'Sunday';
@@ -183,3 +195,66 @@ console.log(peopleWithAgeDrink(18));
 console.log(peopleWithAgeDrink(20));
 console.log(peopleWithAgeDrink(29));
 console.log(peopleWithAgeDrink(30));
+
+// DESCRIPTION:
+// Create a function called _if which takes 3 arguments: a value bool and 2 functions (which do not take any parameters): func1 and func2
+// When bool is truthy, func1 should be called, otherwise call the func2.
+// Example:
+// _if(true, function(){console.log("True")}, function(){console.log("false")})
+// // Logs 'True' to the console.
+
+// function _if(bool, func1, func2) {
+//     if (bool === func1) {
+//       return "true";
+//       } else if (bool !== func2){
+//         return "false";
+//   }
+//    } 
+
+// console.log("'true' function unexpectedly called");
+// console.log("'false' function unexpectedly called");
+// console.log ('-------------');
+
+console.clear();
+
+ function typeValidation(variable,type) {
+  if (typeof variable === type) {
+    return 'true';
+  } else {
+    return 'false';
+  }
+ }
+
+ console.log(typeValidation(42, "number"));
+ console.log(typeValidation("42", "number"));
+
+ function arrayPlusArray(arr1, arr2) {
+    let arr1Sum = 0;
+    let arr2Sum = 0;
+  for (let i = 0; i < arr1.length; i++) {
+      arr1Sum += arr1[i];
+  }   
+  for (let m = 0; m < arr2.length; m++) {
+    arr2Sum += arr2[m];
+    }
+return totalSum = arr1Sum + arr2Sum;
+      }
+
+console.log(arrayPlusArray([1, 2, 3], [4, 5, 6]));
+console.log(arrayPlusArray([-1, -2, -3], [-4, -5, -6]));
+console.log(arrayPlusArray([0, 0, 0], [4, 5, 6]));
+console.log(arrayPlusArray([100, 200, 300], [400, 500, 600]));
+
+function findMultiples(integer, limit) {
+let multiples = [];
+    for (let a = integer; a <= limit; a++ ) {
+        if (a % integer === 0) {
+    }
+    }
+   return multiples;
+  }
+  console.log(findMultiples(5, 25))
+//   console.log(findMultiples(1, 2), [1, 2])
+//   console.log(findMultiples(5, 7), [5])
+//   console.log(findMultiples(4, 27), [4, 8, 12, 16, 20, 24])
+//   console.log(findMultiples(11, 54), [11, 22, 33, 44])
