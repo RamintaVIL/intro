@@ -133,10 +133,3 @@ const maryteFunc = maryteMarks.length === 0 ? emptyMarksArray : marksAverage;
 const maryteAverage = maryteFunc(maryteMarks);
 console.log(maryteAverage);
 
-const leo = oscar;
-//  => oscar === 88 ? "Leo finally won the oscar! Leo is happy" : oscar === 86?"Not even for Wolf of wallstreet?!": oscar < 88?"When will you give Leo an Oscar?" : "Leo got one already!"
-
-// console.log(leo(89))
-// console.log(leo(88));
-// console.log(leo(87))
-// console.log(leo(86))
