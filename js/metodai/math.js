@@ -103,7 +103,7 @@ console.log(Math.random());
 console.log(Math.random());
 console.log(0.9999999999999999);
 
-// ženklas
+// ženklas, bet skaičiai yra 1, -1, 0, -0. nors sveika dalis didesnė.
 console.log(Math.sign(5));
 console.log(Math.sign(-5));
 console.log(Math.sign(3.14));
@@ -114,8 +114,10 @@ console.log(Math.sign(-99));
 console.log(Math.sign(Infinity));
 console.log(Math.sign(-Infinity));
 
+// ištraukia šaknį. I yra menamasis skaičius.
 console.log(Math.sqrt(4));
 console.log(Math.sqrt(9));
 console.log(Math.sqrt(81));
 console.log(Math.sqrt(-4), '2i');
-
+console.log(Math.sqrt(-9), '3i');
+console.log(Math.sqrt(-81), '9i');
