@@ -270,3 +270,18 @@ function arrayMadness(a, b) {
   console.log(arrayMadness([1,3,5,2,4],[2,2,2,2,2,2,2,1]), false);
   console.log(arrayMadness([1,2,3,4,5],[2,2,2,2,2,2,1,1,1]), true);
   console.log(arrayMadness([2,4,6,8,10,12,14],[1,3,5,7,9,11,13]), false);
+
+  function cookie(x){
+    if (typeof x === 'string') {
+      return "Who ate the last cookie? It was Zach!"
+    } else if (typeof x === 'number ') {
+      return "Who ate the last cookie? It was Monica!"
+    } else {
+      return "Who ate the last cookie? It was the dog!"
+    }
+  }
+
+console.log(cookie("Ryan"), "Who ate the last cookie? It was Zach!")
+console.log(cookie(26), "Who ate the last cookie? It was Monica!")
+console.log(cookie(2.3), "Who ate the last cookie? It was Monica!")
+console.log(cookie(true), "Who ate the last cookie? It was the dog!")
