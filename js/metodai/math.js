@@ -102,3 +102,20 @@ console.log(Math.random());
 console.log(Math.random());
 console.log(Math.random());
 console.log(0.9999999999999999);
+
+// ženklas
+console.log(Math.sign(5));
+console.log(Math.sign(-5));
+console.log(Math.sign(3.14));
+console.log(Math.sign(-3.14));
+console.log(Math.sign(0));
+console.log(Math.sign(-0));
+console.log(Math.sign(-99));
+console.log(Math.sign(Infinity));
+console.log(Math.sign(-Infinity));
+
+console.log(Math.sqrt(4));
+console.log(Math.sqrt(9));
+console.log(Math.sqrt(81));
+console.log(Math.sqrt(-4), '2i');
+
