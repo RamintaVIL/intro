@@ -51,11 +51,11 @@ console.log(stud2.age);
 console.log(stud2.isMarried);
 
 const students = [
-{ name: 'Jonas', age: 99, isMarried: true},
-{ name: 'Maryte', age: 88, isMarried: false},
-{ name: 'Petras', age: 77, isMarried: false},
-{ name: 'Ona', age: 66, isMarried: true},
-{ name: 'Chuck', age: Infinity, isMarried: NaN},
+{ name: 'Jonas', age: 99, isMarried: true, marks: [9, 8, 7, 10]},
+{ name: 'Maryte', age: 88, isMarried: false, marks : []},
+{ name: 'Petras', age: 77, isMarried: false, marks : []},
+{ name: 'Ona', age: 66, isMarried: true, marks : []},
+{ name: 'Chuck', age: Infinity, isMarried: NaN, marks : []},
 ];
 
 console.log(students);
@@ -65,6 +65,7 @@ console.log(students.at(-1));
 console.log(students.at(-1).name);
 console.log(students[1].age);
 console.log(students[2].isMarried);
+console.log(students[1].marks);
 
 //            name, age, isMarried
 function intro(studentdata) { 
@@ -89,7 +90,7 @@ function intro(studentdata) {
 // kad butu lengviau skaityti
 function intro(studentData) { 
     const status = studentData.isMarried ? 'esu' : 'nesu';
-    return `Sveiki, as ${studentData.name}, man ${studentData.age} ir ${status} vedes`;   
+    return `Sveiki, as ${studentData.name}, man ${studentData.age} ir ${status} vedes ir mano pazymiai ${studentData.marks} yra.`;   
     }  
     
     for(let i = 0; i < students.length; i++) {
