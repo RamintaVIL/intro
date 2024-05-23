@@ -103,6 +103,7 @@ for (let i = 0; i < marks.length; i++){
 }
 
 console.log(sum / marks.length);
+console.clear();
 
 const jonas = [];
 const maryte = [10, 2];
@@ -111,7 +112,7 @@ const ona = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
 function marksAverage(marks) {
   if (marks.length === 0) {
-    return 'Nera Pazymiu.';
+    return 'Nera pazymiu.';
   }
   let sum = 0;
 
@@ -125,3 +126,29 @@ console.log(marksAverage(jonas));
 console.log(marksAverage(maryte));
 console.log(marksAverage(petras));
 console.log(marksAverage(ona));
+
+/* 
+- Skaičių masyvo atvaizdavimas iš kairės į dešinę:
+5
+4
+3
+2
+1
+*/
+function reverseArrayOfNumbers(list) {
+  for (let i = list.length - 1; i >=0 ; i--){
+    console.log(list[i]); 
+  }
+}
+reverseArrayOfNumbers ([1, 2, 3, 4, 5]);
+
+// Jei pateiktą skaičių masyvą reikia apversti pačiame masyve ir jį grąžinti : [5, 4, 3, 2, 1].
+function reverseArrayOfNumbers1(list) {
+  const rev = [];
+  for (let m = list.length - 1; m >=0 ; m--){
+    rev.push(list[m]); 
+  }
+  return rev;
+}
+const ats = reverseArrayOfNumbers1([1, 2, 3, 4, 5]);
+console.log(ats);
