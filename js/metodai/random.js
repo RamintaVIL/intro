@@ -73,7 +73,7 @@ console.log('-----------------------')
 // man reikia atsitiktinio skaiciaus intervale nuo 23 iki 617 imtinai
 function atsitiktinisSkaicius(count, min, max){
 for (let i = 0; i < count; i++) {
-  let random = Math.floor(Math.random() * (max - min + 1));
+  let random = Math.floor(Math.random() * (max - min + 1) + min);
   console.log(random);
 }
 }
