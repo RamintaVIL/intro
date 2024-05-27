@@ -154,6 +154,7 @@ for (let i = 0; i < marytesPazymiai.length; i++) {
     console.log('maryte', marytesPazymiai[i]);
 }
 
+// matrixa yra masyvas, kuriame yra dar vienas masyvas
 const gorila = [
  [1, 2, 3],                      // 0
  [4, [5, 6], 7],                 // 1
