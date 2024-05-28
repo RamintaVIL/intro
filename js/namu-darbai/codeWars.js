@@ -128,7 +128,64 @@ function differenceInAges(ages){
 
 console.log(differenceInAges([82, 15, 6, 38, 35]));
 console.log(differenceInAges([57, 99, 14, 32]));
-  
+
+// https://www.codewars.com/kata/5808dcb8f0ed42ae34000031/train/javascript
+function switchItUp(number){
+
+    switch (number) {
+    case 1:
+    return 'One';
+
+    case 2:
+    return'Two'; 
+    
+    case 3:
+    return'Three' ;
+
+    case 4:
+    return'Four'; 
+
+    case 5:
+    return'Five';  
+
+    case 6:
+    return'Six';
+    
+    case 7:
+    return'Seven';
+
+    case 8:
+    return'Eight';
+
+    case 9:
+    return'Nine';  
+    
+    case 0:
+    return'Zero';
+    
+}
+}
+console.log(switchItUp(1));
+console.log(switchItUp(3));
+console.log(switchItUp(5));
+
+// https://www.codewars.com/kata/57a429e253ba3381850000fb/train/javascript
+function bmi(weight, height) {
+    let bmi = weight / (height ** 2);
+    if (bmi <= 18.5) {
+      return "Underweight";
+    } else if (bmi <= 25.0) {
+      return "Normal";
+    } else if (bmi <= 30.0) {
+      return "Overweight";
+    } else if (bmi > 30) {
+      return "Obese";
+  }
+    }
+console.log(bmi(80, 1.80));
+console.log(bmi(110, 1.70));
+console.log(bmi(75, 1.70));
+console.log(bmi(45, 1.70));
 
 
 
