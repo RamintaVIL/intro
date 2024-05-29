@@ -121,5 +121,13 @@ console.log(sum / count);
 //     sum += mark;
 //     count++;
 // }
+const text = 'pomidoras'
+let reversedText = '';
+for (let i = 0; i < text.length; i++) {
+    const symbol = text[i];
+    reversedText = symbol + reversedText
+}
+
+console.log(text, '--->', reversedText);
 
 // DO-WHILE - tikėtina, kad niekada nepanaudosime
