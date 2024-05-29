@@ -197,7 +197,40 @@ function varduPalyginimas(a, b) {
     } else {
         return 1;
     }
-
 }
 students.sort((varduPalyginimas));
 console.log(students);
+
+console.log('\n ND------------------------');
+
+const purchase = [
+    { fruit: 'Apple', price: 1.50 },
+    { fruit: 'Orange', price: 5.74 },
+    { fruit: 'Strawberry', price: 10.22},
+    { fruit: 'Lemon', price: 0.27 },
+]
+
+purchase.sort();
+console.log(purchase);
+
+purchase.sort((a, b) => a.price - b.price);
+console.log(purchase);
+
+console.log('Maziausia kaina:', purchase[0].price);
+console.log('Maziausios kainos vaisiaus pavadinimas:', purchase[0].fruit);
+
+console.log('Didziausia kaina:', purchase.at(-1).price);
+console.log('Didziausios kainos vaisiaus pavadinimas:', purchase.at(-1).fruit);
+
+function fruitAbc(a, b) {
+    if (a.fruit < b.fruit) {
+        return -1;
+    } else if (a.fruit === b.fruit) {
+        return 0;
+    } else {
+        return 1;
+    }
+}
+purchase.sort((fruitAbc));
+console.log(purchase);
+
