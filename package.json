@@ -4,6 +4,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "nd:duty-free": "node --watch ./js/namu-darbai/duty-free.js",
+    "nd:hotpo": "node --watch ./js/namu-darbai/hotpo.js",
     "method:array2": "node --watch ./js/metodai/array2.js",
     "for-other": "node --watch ./js/ciklai/for-other.js",
     "switch": "node --watch ./js/palyginimas/switch.js",
