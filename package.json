@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "method:array2": "node --watch ./js/metodai/array2.js",
     "for-other": "node --watch ./js/ciklai/for-other.js",
     "switch": "node --watch ./js/palyginimas/switch.js",
     "des": "node --watch ./js/metodai/des.js",

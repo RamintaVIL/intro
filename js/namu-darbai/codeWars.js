@@ -205,11 +205,24 @@ function well(x){
     }
 }     
 
-console.log(well(['bad', 'bad', 'bad']));
+console.log(well(['bad', 'bad', 'bad']));n
 console.log(well(['good', 'bad', 'bad', 'bad', 'bad']));
 console.log(well(['good', 'bad', 'bad', 'bad', 'bad', 'good', 'bad', 'bad', 'good']));
 
+// https://www.codewars.com/kata/51c8991dee245d7ddf00000e/train/javascript
+function reverseWords(str) {
+    let words = str.split(' '); // padalina eilutę į žodžius
+    let reverseWords = words.reverse(); // apverčia žodžių tvarką masyve
+    return reverseWords.join(' '); // sujungia žodius į vieną sakinį
+}
 
+
+console.log(reverseWords("hello world!"));
+console.log(reverseWords("yoda doesn't speak like this" ));
+console.log(reverseWords("foobar"));
+console.log(reverseWords("kata editor"));
+console.log(reverseWords("row row row your boat"));
+console.log(reverseWords(""));
 
 // https://www.codewars.com/kata/5732b0351eb838d03300101d/train/javascript
 
