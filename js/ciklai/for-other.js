@@ -121,11 +121,19 @@ console.log(sum / count);
 //     sum += mark;
 //     count++;
 // }
+
 const text = 'pomidoras'
 let reversedText = '';
 for (let i = 0; i < text.length; i++) {
     const symbol = text[i];
     reversedText = symbol + reversedText
+}
+
+console.log(text, '--->', reversedText);
+
+let reverseText2 = '';
+for (const symbol of text) {
+    reverseText2 = symbol + reverseText2;
 }
 
 console.log(text, '--->', reversedText);
