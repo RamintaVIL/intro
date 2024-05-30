@@ -234,3 +234,39 @@ function fruitAbc(a, b) {
 purchase.sort((fruitAbc));
 console.log(purchase);
 
+console.log('\n REDUCE-----------------');
+
+const marks1 = [10, 2, 8, 4, 6];
+// total = jau suskaiciuota tarpine suma, item = kiekvienas narys is masyvo. P.S nepamirsti prirasyti 0.
+// 0 + 10 + 2 + 8 + 4 + 6;
+const sum = marks.reduce((total, item) => total + item, 0);  // eina per ta pati masyva ir ima po viena reiksme, taip kaip map ir filter
+console.log(sum);
+
+// 10 + 2 + 8 + 4 + 6;
+const sum2 = marks.reduce((total, item) => total + item);  
+console.log(sum2);
+
+// 1000 + 10 + 2 + 8 + 4 + 6;
+const sum3 = marks.reduce((total, item) => total + item, 1000);  
+console.log(sum3);
+
+// 10 - 2 - 8 - 4 - 6;
+const diff1 = marks.reduce((total, item) => total - item);  
+console.log(diff1);
+
+// 0 - 10 - 2 - 8 - 4 - 6;
+const diff2 = marks.reduce((total, item) => total - item, 0);  
+console.log(diff2);
+
+const dict = ['Labas', 'rytas', 'sakau', 'tau'];
+// suskaiciavo viso masyvo raidziu kieki
+const symbolInDict = dict.reduce((t, w) => t + w.length, 0);
+console.log(symbolInDict);
+
+// istraukia kiekvieno zodzio pirmasias raides
+const firstLetters = dict.reduce((t, w) => t + w[0], '');
+console.log(firstLetters);
+
+// papildomai pridedame uzrasa "Pirmosios raides:"
+const firstLetters2 = dict.reduce((t, w) => t + w[0], 'Pirmos raides:');
+console.log(firstLetters2);
