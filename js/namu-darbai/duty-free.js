@@ -50,11 +50,6 @@ function tripleTrouble(one, two, three){
  console.log(tripleTrouble("Sea","urn","pms")); 
  console.log(tripleTrouble("LLh","euo","xtr"));
 
-
-
-
-
-
 /*
 https://www.codewars.com/kata/568dc014440f03b13900001d/train/javascript
 */

@@ -220,27 +220,6 @@ function isPythagoreanTriple(integers) {
 console.log(isPythagoreanTriple([3, 4, 5]));
 console.log(isPythagoreanTriple([3, 5, 9]));
 
-// DESCRIPTION:
-// Create a function called _if which takes 3 arguments: a value bool and 2 functions (which do not take any parameters): func1 and func2
-// When bool is truthy, func1 should be called, otherwise call the func2.
-// Example:
-// _if(true, function(){console.log("True")}, function(){console.log("false")})
-// // Logs 'True' to the console.
-
-// function _if(bool, func1, func2) {
-//     if (bool === func1) {
-//       return "true";
-//       } else if (bool !== func2){
-//         return "false";
-//   }
-//    } 
-
-// console.log("'true' function unexpectedly called");
-// console.log("'false' function unexpectedly called");
-// console.log ('-------------');
-
-
-
 // function findMultiples(integer, limit) {
 // let multiples = [];
 //     for (let a = integer; a <= limit; a++ ) {

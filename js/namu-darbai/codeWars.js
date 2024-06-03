@@ -204,8 +204,7 @@ function well(x){
         return 'I smell a series!'
     }
 }     
-
-console.log(well(['bad', 'bad', 'bad']));n
+console.log(well(['bad', 'bad', 'bad']));
 console.log(well(['good', 'bad', 'bad', 'bad', 'bad']));
 console.log(well(['good', 'bad', 'bad', 'bad', 'bad', 'good', 'bad', 'bad', 'good']));
 
@@ -216,7 +215,6 @@ function reverseWords(str) {
     return reverseWords.join(' '); // sujungia žodius į vieną sakinį
 }
 
-
 console.log(reverseWords("hello world!"));
 console.log(reverseWords("yoda doesn't speak like this" ));
 console.log(reverseWords("foobar"));
@@ -226,18 +224,16 @@ console.log(reverseWords(""));
 
 // https://www.codewars.com/kata/5732b0351eb838d03300101d/train/javascript
 
-// function blackAndWhite(arr) {
-//     if (!Array.isArray(arr)) {
-//         console.log("It's a fake array");
-//     } else if (arr === 5) {
-//         console.log("It's a black array");
-//     } else if (arr === 13) {
-//         console.log("It's a black array");
-//     } else {
-//         console.log("It's a white array");
-//     }
-// }
+function blackAndWhite(arr) {
+    if (!Array.isArray(arr)) {
+        return "It's a fake array";
+    } else if (arr.includes(5) && arr.includes(13)) {
+        return "It's a black array";
+    } else {
+        return "It's a white array";
+    }
+}
   
-//   console.log(blackAndWhite(5,13));
-//   console.log(blackAndWhite([5,13]));
-//   console.log(blackAndWhite([5,12]));
+  console.log(blackAndWhite(5,13));
+  console.log(blackAndWhite([5,13]));
+  console.log(blackAndWhite([5,12]));
