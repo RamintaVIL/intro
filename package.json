@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "nd:sumation": "node --watch ./js/namu-darbai/sumation.js",
     "nd:triple": "node --watch ./js/namu-darbai/triple.js",
     "nd:sperm": "node --watch ./js/namu-darbai/sperm.js",
     "nd:strCount": "node --watch ./js/namu-darbai/strCount.js",
