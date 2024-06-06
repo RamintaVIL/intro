@@ -92,7 +92,7 @@ console.log('----------------------');
 console.log('number.toFixed()');
 
 const d = 5;
-// reikia gauti 5.00
+// reikia gauti 5.00 nurodo kiek skaitmenu po kablelio norime matyti
 console.log(d);
 console.log(d.toFixed(45)); // kiekis po kablelio
 console.log(d.toFixed(20)); // kiekis po kablelio
