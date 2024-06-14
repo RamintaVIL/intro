@@ -4,6 +4,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "nd:alien": "node --watch ./namu-darbai/alien.js",
+    "nd:stairs": "node --watch ./namu-darbai/stairs.js",
+    "nd:solution": "node --watch ./namu-darbai/solution.js",
+    "mentoriaus:array": "node --watch ./mentoriaus/array.js",
     "new-methods": "node --watch ./qa/new-methods.js",
     "nd:sumation": "node --watch ./js/namu-darbai/sumation.js",
     "nd:triple": "node --watch ./js/namu-darbai/triple.js",
