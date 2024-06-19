@@ -50,173 +50,217 @@ const B = [
     'you cant judge a book by its cover',
     'you cant make an omelette without breaking eggs',
     'you reap what you sow',
-    'youre never too old to learn'
+    'youre never too old to learn',
+    'Labas Pasauli'
 ];
 
-// Suskaičiuoti kiek stringų turi daugiau nei 4 žodžius;
-function moreThanFor (array) {
-   let count = 0;
-   for (let i = 0; i < array.length; i++){
-    if (array[i].split(" ").length > 4) {
-        count++;
-    }
-   }
-return count;
-}
-const result = moreThanFor(B);
-console.log(result);
-
-// Suskaičiuoti kiek masyve yra žodžių;
-function howManyWords (array) {
-    let countWords = 0;
+// Surasti trumpiausią stringą;
+function shortestString(array) {
+    let shortest = array[0]; // kai ieškome TRUMPAUSIO, reikalingas atskaitos taškas
     for (let i = 0; i < array.length; i++) {
-       countWords += array[i].split(" ").length; 
+        if (shortest.length > array[i].length) {
+            shortest = array[i];
+        }
     }
-    return countWords;
+    return console.log(shortest);
 }
-const countWords = howManyWords(B);
-console.log(countWords);
+shortestString(B);
+
+// Surasti stringą, kuris prasideda “a” raide:
+function startWithA(array) {
+    let string = '';  
+    // nes turime gauti stringo atsakymą
+    for (let i = 0; i < array.length; i++) {
+        if (array[i].startsWith('a')) {
+            // jei mūsų array elementas prasideda 'a'.Eina per array[0]; array[1]; array[2] ir t.t.
+            string = array[i];  
+            // tuščias stringas, kurį išsikelėme prie let ir jis pavirsta į mūsu tą narį.
+            break; 
+            // tam kad sustotų ciklas suktis. Jei nerašytume break, tai ciklas surastų paskutį narį
+        }
+    }
+    return console.log(string)
+}
+startWithA(B);
+
+// Paskaičiuoti kiek stringų, kuris prasideda “a” raide;
+function howManyStartWithA(array) {
+    let str = 0;
+    // kadangi skaičiuojame tai rašome 0, nes atsakymas kiek iš viso
+    for (let i = 0; i < array.length; i++) {
+        if (array[i].startsWith('a')) {
+            str++
+            // prie let 0 stringo, prideda po vieną ir taip sudeda kiek iš viso yra stringų
+        }
+    }
+    return str;
+}
+const str = howManyStartWithA(B);
+console.log(str);
+
+// Išrinkti visus stringus, kurie prasideda “a” raide;
+function allStartWithA(array) {
+    let stringArray = [];   
+    // masyvas, nes turime išrinkti į kažkur
+    for(let i = 0; i < array.length; i++) {
+        if (array[i].startsWith('a')) {
+        // kur stumsime, o array[i] - į ką stumsime    
+        stringArray.push(array[i]);   
+        // paimame tą narį į kurį mes norime įdėti stringAarray ir jei narys tenkina sąlygą tai yra prasideda 'a' raide, tai push įstumia tą stringą į array.  
+        }
+    }
+    return stringArray;
+}
+const stringArray = allStartWithA(B);
+console.log(stringArray);
+
+// Surasti stringą su daugiausiai žodžių;
+function mostlyWords (array) {
+    let words = '';
+    let maxWordsCount = 0;
+    for (let i = 0; i < array.length; i++) {
+       let wordCount = array[i].split(" ").length;
+       // [i] kad kiekvieną narį, tarpas tarp kabačių nes ties kuria vieta splitinam žodžius
+        if (wordCount > maxWordsCount) {
+            maxWordsCount = wordCount;
+            words = array[i];
+        }
+        
+    }
+    return `${words} ir ${maxWordsCount}`;
+}
+const words = mostlyWords(B);
+console.log(words);
+
+// Surasti stringą su mažiausiai žodžių
+function leatsWords (array) {
+    let shortest = array[0];
+    // kad pardėtų nuo pirmo array nario
+   for (let i = 0; i < array.length; i++) {
+    if (array[i].split(' ').length < shortest.split(' ').length)
+    shortest = array[i];
+   }
+return shortest;
+}
+const shortest = leatsWords(B);
+console.log(shortest);
 
 // Suskaičiuoti visas ‘s’ raides;
-function findS(array) {
+function allS(array) {
     let totalallS = 0;
-
+    // skaičiuojame S raides;
     for (let i = 0; i < array.length; i++) {
-        let str = array[i];  // isspausdiname stringus
+        let str = array[i];
+        // iš masyvo išrenka visus stringus
         for (let j = 0; j < str.length; j++) {
             if (str[j] === 's' || str[j] === 'S') {
+                // kadangi mums reikia konkretaus simbolio, sukuriame 2 ciklą
                 totalallS++
+                // pliusuoja raides
             }
         }
     }
     return totalallS;
 }
-const totalallS = findS(B);
+const totalallS = allS(B);
 console.log(totalallS);
 
 // Suskaičiuoti kiek masyve yra raidžių (tarpų tarp žodžių neskaičiuoti!) /\s+/g - cia spase
+// paima raides ir skaicius
 function howMuchLetters(array) {
     let counts = 0;
     for (let i = 0; i < array.length; i++) {
-        let strr = array[i].replace(/\s+/g,'')
-
-        counts += strr.length;   
+        let strr = array[i].replace(/\s+/g, '')
+        // tarpus pakeičiame į nieką
+        counts += strr.length;
+        // kiekvieną simbolį pridedame
     }
     return counts
 }
 const counts = howMuchLetters(B);
 console.log(counts);
 
-// Surasti ilgiausią žodį (ne stringą, o atskirą stringo žodį!);
-
-function longestWorld(array) {
-    let world = '';
- 
+// kitoks sprendimas
+function allLetters (array) {
+    let countAllLetters = 0;
     for (let i = 0; i < array.length; i++) {
-         
-        let words = array[i].split(" ");
-        for (let g = 0; g < words.length; g++) {
-            if (words[g].length > world.length) {
-                world = words[g];
-            }
-            
+        countAllLetters += (array[i].match(/[A-Z]/gi) || []).length; 
+    }
+    return console.log(countAllLetters);
+}
+allLetters(B);
+
+// dar vienas sprendimas
+let raides = 0;
+for (let i = 0; i < B.length; i++) {
+    let strr = B[i]
+    for (let j = 0; j < strr.length; j++) {
+        if (strr[j] !== ' ') {
+            raides++
         }
     }
-    return world
 }
+console.log(raides);
 
-const world = longestWorld(B);
-console.log(world);
+// Surasti ilgiausią žodį (ne stringą, o atskirą stringo žodį!);
+function longestWorld(array) {
+    let word = '';
+    // reikės sužinoti ilgiausią žodį 
+    for (let i = 0; i < array.length; i++) {
+        let words = array[i].split(' ')
+        for (let g = 0; g < words.length; g++) {
+            if (words[g].length > word.length) {
+                word = words[g];
+            }
+        }
+    }
+    return console.log(word)
+}
+longestWorld(B);
+
+// Suskaičiuoti kiek stringų turi daugiau nei 4 žodžius;
+function moreThanFor(array) {
+    let count = 0;
+    for (let i = 0; i < array.length; i++) {
+        if (array[i].split(" ").length > 4) {
+            count++;
+        }
+    }
+    return count;
+}
+const result = moreThanFor(B);
+console.log(result);
+
+// Suskaičiuoti kiek masyve yra žodžių;
+function howManyWords(array) {
+    let countWords = 0;
+    for (let i = 0; i < array.length; i++) {
+        countWords += array[i].split(" ").length;
+    }
+    return countWords;
+}
+const countWords = howManyWords(B);
+console.log(countWords);
 
 
 
 
 
-// Surasti ilgiausią stringą;
-// Surasti trumpiausią stringą;
-// function shortestString(array) {
-//     let shortest = array[0];    // kad ciklas turėtų atskaitos tašką, žinotų nuo kur pradėti sukti ciklą.
-//     for (let i = 0; i < array.length; i++) {
-//         if (array[i].length < shortest.length) {  // pirmo stringo ilgis yra daugiau uz array[i] skaiciu
-//             shortest=array[i]
-//         }
-//     }
-//    return shortest;     
-// }
-// const shortest = shortestString(B);
-// console.log(shortest);
 
 
-// Surasti stringą, kuris prasideda “a” raide;
 
-// function startWithA(array) {
-//     let string = '';   // nes turime gauti stringo atsakymą
-//     for( let i = 0; i < array.length; i++) {
-//         if (array[i].startWith('a')) {
-//         string = array[i];  // tuščias stringas, kurį išsikelėme prie let ir jis pavirsta i musu tą nari 
-//         break;   // jei nerašytume break, tai ciklas surastų paskutį narį
-//         }
-//     }
-    
-// }
 
-// const string = startWithA(B);
-// console.log(string);
 
-// Paskaičiuoti kiek stringą, kuris prasideda “a” raide;
-// function startWithA(array) {
-//     let stringg = 0;   // nes skaičiuojame kiek iš viso
-//     for( let i = 0; i < array.length; i++) {
-//         if (array[i].startWith('a')) {
-//         stringg++   // prie let 0 stringo, prideda po viena ir taip sudeda kiek is viso yra stringu
-//         }
-//     }
-//     return stringg;
-// }
-// const stringg = startWithA(B);
-// console.log(string);
 
-// Išrinkti visus stringus, kurie prasideda “a” raide;
-// function startWithA(array) {
-//     let stringArray = [];   // masyvas, nes turi išrinkti į kažkur
-//     for(let i = 0; i < array.length; i++) {
-//         if (array[i].startWith('a')) {
-//         // kur stumsime, o array[i] - ką stumsime    
-//         stringArray.push(array[i]);   // paimame tą narį į kurį mes norime įdėti stringAarray ir jei narys tenkina sąlygą tai yra prasideda 'a' raide, tai push įstumia tą stringą į array.  
-//         }
-//     }
-//     return stringArray;
-// }
-// const stringArray = startWithA(B);
-// console.log(string);
 
-// Surasti stringą su daugiausia žodžių;
-// function longest(array) {
-//     let longestString = '';
-//     let maxWordsCount = 0;
-//     for (let i = 0; i < array.length; i++) {
-//         let wordsCount = array[i].split(' ').length; // [i] kad kiekvieną narį, tarpas tarp kabačių nes ties kuria vieta splitinam žodžius
-//         if (wordsCount > maxWordsCount) {
-//             maxWordsCount = wordsCount;
-//             longestString = array[i];
-//         }
-//     }
-//     return longestString
-// }
-// const longestString = longest(B);
-// console.log(longestString);
 
-// Surasti stringą su mažiausiai žodžių;
 
-// function shortest(array) {
-//     let shortest = array[0];
-//     for (let i = 0; i < array.length; i++) {
-//         if (array[i].split(" ").length < shortest.split(" ").length) {
-//             shortest = array[i];
-//         }
-        
-//     }
-//   return shortest  
-// }
-// const shortest = shortest(B);
-// console.log(shortest);
+
+
+
+
+
+
+
+
+

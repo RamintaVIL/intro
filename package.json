@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "mentoriaus:number": "node --watch ./mentoriaus/number.js",
     "nd:alien": "node --watch ./namu-darbai/alien.js",
     "nd:stairs": "node --watch ./namu-darbai/stairs.js",
     "nd:solution": "node --watch ./namu-darbai/solution.js",
