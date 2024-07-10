@@ -4,6 +4,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "default": "node --watch ./js/funkcijos/default.js",
+    "nd:cut": "node --watch ./namu-darbai/cut.js",
+    "nd:magazines": "node --watch ./namu-darbai/magazines.js",
+    "nd:addLength": "node --watch ./namu-darbai/addLength.js",
     "mentoriaus:number": "node --watch ./mentoriaus/number.js",
     "nd:alien": "node --watch ./namu-darbai/alien.js",
     "nd:stairs": "node --watch ./namu-darbai/stairs.js",
