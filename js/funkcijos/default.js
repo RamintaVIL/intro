@@ -28,3 +28,4 @@ function header(isHomePage) {
 };
 console.log(header());
 console.log(header(true));
+
